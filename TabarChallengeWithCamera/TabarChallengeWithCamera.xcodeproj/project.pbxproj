@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB164E532BC2A7AF00E88D0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB164E522BC2A7AF00E88D0A /* AppDelegate.swift */; };
+		BB164E552BC2A7AF00E88D0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB164E542BC2A7AF00E88D0A /* SceneDelegate.swift */; };
+		BB164E5A2BC2A7AF00E88D0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB164E582BC2A7AF00E88D0A /* Main.storyboard */; };
+		BB164E5C2BC2A7B200E88D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB164E5B2BC2A7B200E88D0A /* Assets.xcassets */; };
+		BB164E5F2BC2A7B200E88D0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB164E5D2BC2A7B200E88D0A /* LaunchScreen.storyboard */; };
+		BB164E672BC2A86800E88D0A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB164E662BC2A86800E88D0A /* TabBarController.swift */; };
+		BB164E692BC2A88700E88D0A /* Screen01VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB164E682BC2A88700E88D0A /* Screen01VC.swift */; };
+		BB164E6B2BC2A89800E88D0A /* Screen02VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB164E6A2BC2A89800E88D0A /* Screen02VC.swift */; };
+		BB164E6D2BC2A8A800E88D0A /* Screen03VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB164E6C2BC2A8A800E88D0A /* Screen03VC.swift */; };
+		BB164E722BC2BC7300E88D0A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB164E712BC2BC7300E88D0A /* Profile.swift */; };
+		BB164E762BC2BD2F00E88D0A /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB164E742BC2BD2F00E88D0A /* PeopleTableViewCell.swift */; };
+		BB164E772BC2BD2F00E88D0A /* PeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB164E752BC2BD2F00E88D0A /* PeopleTableViewCell.xib */; };
+		BB164E7A2BC2CCFC00E88D0A /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB164E792BC2CCFC00E88D0A /* AlertController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB164E4F2BC2A7AF00E88D0A /* TabarChallengeWithCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabarChallengeWithCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB164E522BC2A7AF00E88D0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB164E542BC2A7AF00E88D0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB164E592BC2A7AF00E88D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB164E5B2BC2A7B200E88D0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB164E5E2BC2A7B200E88D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB164E602BC2A7B200E88D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB164E662BC2A86800E88D0A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BB164E682BC2A88700E88D0A /* Screen01VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen01VC.swift; sourceTree = "<group>"; };
+		BB164E6A2BC2A89800E88D0A /* Screen02VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen02VC.swift; sourceTree = "<group>"; };
+		BB164E6C2BC2A8A800E88D0A /* Screen03VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen03VC.swift; sourceTree = "<group>"; };
+		BB164E712BC2BC7300E88D0A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		BB164E742BC2BD2F00E88D0A /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		BB164E752BC2BD2F00E88D0A /* PeopleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleTableViewCell.xib; sourceTree = "<group>"; };
+		BB164E792BC2CCFC00E88D0A /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB164E4C2BC2A7AF00E88D0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB164E462BC2A7AF00E88D0A = {
+			isa = PBXGroup;
+			children = (
+				BB164E512BC2A7AF00E88D0A /* TabarChallengeWithCamera */,
+				BB164E502BC2A7AF00E88D0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB164E502BC2A7AF00E88D0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB164E4F2BC2A7AF00E88D0A /* TabarChallengeWithCamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB164E512BC2A7AF00E88D0A /* TabarChallengeWithCamera */ = {
+			isa = PBXGroup;
+			children = (
+				BB164E782BC2CCDF00E88D0A /* AlertController */,
+				BB164E732BC2BCDD00E88D0A /* PeopleTableViewCell */,
+				BB164E6E2BC2BC3800E88D0A /* Model */,
+				BB164E522BC2A7AF00E88D0A /* AppDelegate.swift */,
+				BB164E542BC2A7AF00E88D0A /* SceneDelegate.swift */,
+				BB164E662BC2A86800E88D0A /* TabBarController.swift */,
+				BB164E682BC2A88700E88D0A /* Screen01VC.swift */,
+				BB164E6A2BC2A89800E88D0A /* Screen02VC.swift */,
+				BB164E6C2BC2A8A800E88D0A /* Screen03VC.swift */,
+				BB164E582BC2A7AF00E88D0A /* Main.storyboard */,
+				BB164E5B2BC2A7B200E88D0A /* Assets.xcassets */,
+				BB164E5D2BC2A7B200E88D0A /* LaunchScreen.storyboard */,
+				BB164E602BC2A7B200E88D0A /* Info.plist */,
+			);
+			path = TabarChallengeWithCamera;
+			sourceTree = "<group>";
+		};
+		BB164E6E2BC2BC3800E88D0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB164E712BC2BC7300E88D0A /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB164E732BC2BCDD00E88D0A /* PeopleTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BB164E742BC2BD2F00E88D0A /* PeopleTableViewCell.swift */,
+				BB164E752BC2BD2F00E88D0A /* PeopleTableViewCell.xib */,
+			);
+			path = PeopleTableViewCell;
+			sourceTree = "<group>";
+		};
+		BB164E782BC2CCDF00E88D0A /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				BB164E792BC2CCFC00E88D0A /* AlertController.swift */,
+			);
+			path = AlertController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB164E4E2BC2A7AF00E88D0A /* TabarChallengeWithCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB164E632BC2A7B200E88D0A /* Build configuration list for PBXNativeTarget "TabarChallengeWithCamera" */;
+			buildPhases = (
+				BB164E4B2BC2A7AF00E88D0A /* Sources */,
+				BB164E4C2BC2A7AF00E88D0A /* Frameworks */,
+				BB164E4D2BC2A7AF00E88D0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabarChallengeWithCamera;
+			productName = TabarChallengeWithCamera;
+			productReference = BB164E4F2BC2A7AF00E88D0A /* TabarChallengeWithCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB164E472BC2A7AF00E88D0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					BB164E4E2BC2A7AF00E88D0A = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = BB164E4A2BC2A7AF00E88D0A /* Build configuration list for PBXProject "TabarChallengeWithCamera" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB164E462BC2A7AF00E88D0A;
+			productRefGroup = BB164E502BC2A7AF00E88D0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB164E4E2BC2A7AF00E88D0A /* TabarChallengeWithCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB164E4D2BC2A7AF00E88D0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB164E772BC2BD2F00E88D0A /* PeopleTableViewCell.xib in Resources */,
+				BB164E5F2BC2A7B200E88D0A /* LaunchScreen.storyboard in Resources */,
+				BB164E5C2BC2A7B200E88D0A /* Assets.xcassets in Resources */,
+				BB164E5A2BC2A7AF00E88D0A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB164E4B2BC2A7AF00E88D0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB164E672BC2A86800E88D0A /* TabBarController.swift in Sources */,
+				BB164E7A2BC2CCFC00E88D0A /* AlertController.swift in Sources */,
+				BB164E6B2BC2A89800E88D0A /* Screen02VC.swift in Sources */,
+				BB164E692BC2A88700E88D0A /* Screen01VC.swift in Sources */,
+				BB164E722BC2BC7300E88D0A /* Profile.swift in Sources */,
+				BB164E762BC2BD2F00E88D0A /* PeopleTableViewCell.swift in Sources */,
+				BB164E532BC2A7AF00E88D0A /* AppDelegate.swift in Sources */,
+				BB164E552BC2A7AF00E88D0A /* SceneDelegate.swift in Sources */,
+				BB164E6D2BC2A8A800E88D0A /* Screen03VC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB164E582BC2A7AF00E88D0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB164E592BC2A7AF00E88D0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB164E5D2BC2A7B200E88D0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB164E5E2BC2A7B200E88D0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB164E612BC2A7B200E88D0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB164E622BC2A7B200E88D0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB164E642BC2A7B200E88D0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9FMLRW284;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TabarChallengeWithCamera/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoffmann.TabarChallengeWithCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB164E652BC2A7B200E88D0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9FMLRW284;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TabarChallengeWithCamera/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoffmann.TabarChallengeWithCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB164E4A2BC2A7AF00E88D0A /* Build configuration list for PBXProject "TabarChallengeWithCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB164E612BC2A7B200E88D0A /* Debug */,
+				BB164E622BC2A7B200E88D0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB164E632BC2A7B200E88D0A /* Build configuration list for PBXNativeTarget "TabarChallengeWithCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB164E642BC2A7B200E88D0A /* Debug */,
+				BB164E652BC2A7B200E88D0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB164E472BC2A7AF00E88D0A /* Project object */;
+}
