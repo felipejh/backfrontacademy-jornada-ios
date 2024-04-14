@@ -1,8 +1,8 @@
 //
 //  HomeScreen.swift
-//  NotificationCenterAndProtocol
+//  NotificationCenterExercise
 //
-//  Created by Felipe Hoffmann on 13/04/24.
+//  Created by Felipe Hoffmann on 14/04/24.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ class HomeScreen: UIView {
     
     private weak var delegate: HomeScreenProtocol?
     
-    public func delete(delegate: HomeScreenProtocol) {
+    public func delegate(delegate: HomeScreenProtocol) {
         self.delegate = delegate
     }
 
@@ -23,9 +23,9 @@ class HomeScreen: UIView {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         
-        image.contentMode = .scaleAspectFit
         image.image = UIImage(named: "logo_apple")?.withRenderingMode(.alwaysTemplate)
         image.tintColor = .white
+        image.contentMode = .scaleAspectFit
         
         return image
     }()
@@ -33,9 +33,11 @@ class HomeScreen: UIView {
     lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .black
+        
+        label.textColor = .white
+        label.text = "Teste"
+        label.font = UIFont.boldSystemFont(ofSize: 34)
         label.textAlignment = .center
-        label.font = UIFont.boldSystemFont(ofSize: 26)
         
         return label
     }()
@@ -44,13 +46,12 @@ class HomeScreen: UIView {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         
-        button.setTitle("Clique aqui", for: .normal)
+        button.setTitle("Escolher", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-        button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.textAlignment = .center
-        button.backgroundColor = .white
-        button.clipsToBounds = true
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.layer.backgroundColor = UIColor.white.cgColor
         button.layer.cornerRadius = 8
+        button.clipsToBounds = true
         
         button.addTarget(self, action: #selector(tappedChooseButton), for: .touchUpInside)
         
@@ -63,6 +64,8 @@ class HomeScreen: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .black
+        
         addElements()
         configConstraints()
     }
@@ -79,20 +82,18 @@ class HomeScreen: UIView {
     
     private func configConstraints() {
         NSLayoutConstraint.activate([
-            logoImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -80),
-            logoImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            logoImageView.heightAnchor.constraint(equalToConstant: 200),
-            logoImageView.widthAnchor.constraint(equalToConstant: 200),
+            logoImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            logoImageView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -80),
+            logoImageView.heightAnchor.constraint(equalToConstant: 150),
             
-            descriptionLabel.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 30),
-            descriptionLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            descriptionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            descriptionLabel.heightAnchor.constraint(equalToConstant: 60),
+            descriptionLabel.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 40),
+            descriptionLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             
             chooseButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -60),
-            chooseButton.leadingAnchor.constraint(equalTo: descriptionLabel.leadingAnchor),
-            chooseButton.trailingAnchor.constraint(equalTo: descriptionLabel.trailingAnchor),
+            chooseButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            chooseButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
             chooseButton.heightAnchor.constraint(equalToConstant: 50),
         ])
     }
+    
 }
