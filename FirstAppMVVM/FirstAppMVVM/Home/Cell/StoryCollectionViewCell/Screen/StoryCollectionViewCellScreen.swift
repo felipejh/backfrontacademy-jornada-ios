@@ -45,6 +45,7 @@ class StoryCollectionViewCellScreen: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         addElements()
+        configConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -60,8 +61,8 @@ class StoryCollectionViewCellScreen: UIView {
     private func configConstraints() {
         NSLayoutConstraint.activate([
             profileImageView.topAnchor.constraint(equalTo: topAnchor, constant: 15),
-            profileImageView.widthAnchor.constraint(equalToConstant: 10),
-            profileImageView.heightAnchor.constraint(equalToConstant: 10),
+            profileImageView.widthAnchor.constraint(equalToConstant: 70),
+            profileImageView.heightAnchor.constraint(equalToConstant: 70),
             profileImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
             
             addButton.widthAnchor.constraint(equalToConstant: 25),
