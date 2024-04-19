@@ -9,6 +9,17 @@ import UIKit
 
 class HomeViewModel {
     
+    private var posts = [
+        Posts(profileImage: "img2", userName: "jack", postImage: "post1"),
+        Posts(profileImage: "img4", userName: "samuel", postImage: "post2"),
+        Posts(profileImage: "img3", userName: "carolina", postImage: "post3"),
+        Posts(profileImage: "img6", userName: "puggy_101", postImage: "post4"),
+    ]
+    
+    public var getListPosts: [Posts] {
+        posts
+    }
+    
     private var story = [
     Stories(image: "img1", userName: "Add Story"),
     Stories(image: "img2", userName: "jack"),
@@ -18,9 +29,13 @@ class HomeViewModel {
     Stories(image: "img6", userName: "puggy_101"),
     Stories(image: "img7", userName: "dheeraj_ks"),
     ]
+    
+    public var getListStories: [Stories] {
+        story
+    }
 
     public var numberOfItems: Int {
-        1
+        2
     }
     
     public func sizeForItem(indexPath: IndexPath, frame: CGRect) -> CGSize {
@@ -29,9 +44,5 @@ class HomeViewModel {
         } else {
             return CGSize(width: frame.width - 120, height: frame.height)
         }
-    }
-    
-    public var getListStories: [Stories] {
-        story
     }
 }

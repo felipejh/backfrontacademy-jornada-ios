@@ -1,23 +1,23 @@
 //
-//  HomeScreen.swift
+//  PostCardCollectionViewCellScreen.swift
 //  FirstAppMVVM
 //
-//  Created by Felipe Hoffmann on 15/04/24.
+//  Created by Felipe Hoffmann on 18/04/24.
 //
 
 import UIKit
 
-class HomeScreen: UIView {
-    
+class PostCardCollectionViewCellScreen: UIView {
+
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
+        layout.scrollDirection = .vertical
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
-        cv.showsHorizontalScrollIndicator = false
-        cv.register(StoryCardCollectionViewCell.self, forCellWithReuseIdentifier: StoryCardCollectionViewCell.identifier)
-        cv.register(PostCardCollectionViewCell.self, forCellWithReuseIdentifier: PostCardCollectionViewCell.identifier)
+        cv.showsVerticalScrollIndicator = false
         cv.backgroundColor = .clear
+        cv.register(PostCollectionViewCell.self, forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
+        
         return cv
     }()
     
@@ -25,20 +25,16 @@ class HomeScreen: UIView {
         collectionView.delegate = delegate
         collectionView.dataSource = dataSource
     }
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .appBackground
         addSubview(collectionView)
-        configConstraints()
+        collectionView.pin(to: self)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func configConstraints() {
-        collectionView.pin(to: self)
-    }
     
 }
