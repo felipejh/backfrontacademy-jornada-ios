@@ -60,6 +60,9 @@
 		BBDD6D692BD3D84B00470046 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD6D672BD3D84B00470046 /* LoginScreen.swift */; };
 		BBDD6D6D2BD3DB3A00470046 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD6D6C2BD3DB3A00470046 /* LoginViewModel.swift */; };
 		BBDD6D702BD3E58F00470046 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD6D6F2BD3E58F00470046 /* Alert.swift */; };
+		BBDD6D762BD40A0C00470046 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD6D752BD40A0C00470046 /* SignUpScreen.swift */; };
+		BBDD6D782BD40A5000470046 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD6D772BD40A5000470046 /* SignUpVC.swift */; };
+		BBDD6D7A2BD40AB200470046 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD6D792BD40AB200470046 /* SignUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +94,9 @@
 		BBDD6D672BD3D84B00470046 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		BBDD6D6C2BD3DB3A00470046 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		BBDD6D6F2BD3E58F00470046 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		BBDD6D752BD40A0C00470046 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		BBDD6D772BD40A5000470046 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		BBDD6D792BD40AB200470046 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +294,7 @@
 		BBDC74C82BCC70F3008B0B97 /* FirstAppMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				BBDD6D712BD409AF00470046 /* SignUp */,
 				BBDD6D6E2BD3E57D00470046 /* Alert */,
 				BBA867F42BCE83B000CEE0D9 /* Model */,
 				BBDC74E02BCD3345008B0B97 /* Extension */,
@@ -371,6 +378,40 @@
 				BBDD6D6F2BD3E58F00470046 /* Alert.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		BBDD6D712BD409AF00470046 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				BBDD6D742BD409F600470046 /* Screen */,
+				BBDD6D732BD409E900470046 /* ViewModel */,
+				BBDD6D722BD409E000470046 /* VC */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		BBDD6D722BD409E000470046 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BBDD6D772BD40A5000470046 /* SignUpVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BBDD6D732BD409E900470046 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BBDD6D792BD40AB200470046 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BBDD6D742BD409F600470046 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BBDD6D752BD40A0C00470046 /* SignUpScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,7 +528,10 @@
 				BB26802A2BCDEF0700E905AC /* HomeViewModel.swift in Sources */,
 				BBA867FB2BCE89A700CEE0D9 /* StoryCollectionViewCell.swift in Sources */,
 				BBA867F32BCE824100CEE0D9 /* StoryCardViewModel.swift in Sources */,
+				BBDD6D762BD40A0C00470046 /* SignUpScreen.swift in Sources */,
+				BBDD6D782BD40A5000470046 /* SignUpVC.swift in Sources */,
 				BBC200AD2BD12D6400708276 /* PostCollectionViewCell.swift in Sources */,
+				BBDD6D7A2BD40AB200470046 /* SignUpViewModel.swift in Sources */,
 				BBC200AA2BD12B2800708276 /* PostCardViewModel.swift in Sources */,
 				BBDD6D692BD3D84B00470046 /* LoginScreen.swift in Sources */,
 				BBC200A52BD1261200708276 /* PostCardCollectionViewCellScreen.swift in Sources */,

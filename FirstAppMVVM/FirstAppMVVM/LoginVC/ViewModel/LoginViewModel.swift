@@ -32,14 +32,4 @@ class LoginViewModel {
             }
         }
     }
-    
-    public func registerUser(email: String, password: String) {
-        auth.createUser(withEmail: email, password: password) { authResult, error in
-            if error == nil {
-                print("SignOn success")
-            } else {
-                print("SignOn error. Error: \(error?.localizedDescription ?? "")")
-            }
-        }
-    }
 }

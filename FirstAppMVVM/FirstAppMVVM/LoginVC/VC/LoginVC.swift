@@ -17,6 +17,10 @@ class LoginVC: UIViewController {
         view = loginScreen
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loginScreen?.delegate(delegate: self)
@@ -31,6 +35,11 @@ extension LoginVC: LoginScreenProtocol {
     func tappedLoginButton() {
         viewModel.login(email: loginScreen?.emailTextField.text ?? "", password: loginScreen?.passwordTextField.text ?? "")
     }
+    
+    func tappedSignUpButton() {
+        let vc = SignUpVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension LoginVC: UITextFieldDelegate {
@@ -44,11 +53,11 @@ extension LoginVC: UITextFieldDelegate {
         let password: String = loginScreen?.passwordTextField.text ?? ""
         
         if email.isEmpty || password.isEmpty {
-            loginScreen?.loginButton.backgroundColor = .darkGray.withAlphaComponent(0.4)
+            loginScreen?.loginButton.backgroundColor = .lightGray.withAlphaComponent(0.4)
             loginScreen?.loginButton.isEnabled = false
         } else {
             loginScreen?.loginButton.setTitleColor(.white, for: .normal)
-            loginScreen?.loginButton.backgroundColor = .darkGray
+            loginScreen?.loginButton.backgroundColor = .blue
             loginScreen?.loginButton.isEnabled = true
         }
     }
