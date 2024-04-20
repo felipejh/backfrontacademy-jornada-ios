@@ -79,7 +79,6 @@ class LoginScreen: UIView {
     }()
     
     @objc func tappedLoginButton(_sender: UIButton) {
-        print("Button is working")
         delegate?.tappedLoginButton()
     }
     

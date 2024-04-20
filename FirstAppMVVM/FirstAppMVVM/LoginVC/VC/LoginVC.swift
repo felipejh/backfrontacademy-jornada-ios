@@ -8,8 +8,9 @@
 import UIKit
 
 class LoginVC: UIViewController {
-
-    var loginScreen: LoginScreen?
+    
+    private var loginScreen: LoginScreen?
+    private var viewModel: LoginViewModel = LoginViewModel()
     
     override func loadView() {
         loginScreen = LoginScreen()
@@ -20,24 +21,15 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         loginScreen?.delegate(delegate: self)
         loginScreen?.configTextFieldDelegate(delegate: self)
+        viewModel.delegate(delegate: self)
     }
-
-
+    
+    
 }
 
 extension LoginVC: LoginScreenProtocol {
     func tappedLoginButton() {
-        print("Protocol")
-        let vc: HomeVC = HomeVC()
-        
-//        Open as modal
-//        present(vc, animated: true)
-        
-//        Open the second as a navigationBar
-//        let nav = UINavigationController(rootViewController: vc)
-//        present(vc, animated: true)
-        
-        navigationController?.pushViewController(vc, animated: true)
+        viewModel.login(email: loginScreen?.emailTextField.text ?? "", password: loginScreen?.passwordTextField.text ?? "")
     }
 }
 
@@ -50,13 +42,11 @@ extension LoginVC: UITextFieldDelegate {
         print(#function)
         let email: String = loginScreen?.emailTextField.text ?? ""
         let password: String = loginScreen?.passwordTextField.text ?? ""
-               
+        
         if email.isEmpty || password.isEmpty {
-            print("Disabled button")
             loginScreen?.loginButton.backgroundColor = .darkGray.withAlphaComponent(0.4)
             loginScreen?.loginButton.isEnabled = false
         } else {
-            print("Button enabled")
             loginScreen?.loginButton.setTitleColor(.white, for: .normal)
             loginScreen?.loginButton.backgroundColor = .darkGray
             loginScreen?.loginButton.isEnabled = true
@@ -68,4 +58,18 @@ extension LoginVC: UITextFieldDelegate {
         textField.resignFirstResponder()
         return false
     }
+}
+
+extension LoginVC: LoginViewModelProtocol {
+    func successLogin() {
+        let vc: HomeVC = HomeVC()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
+    func errorLogin(error: String) {
+        Alert(controller: self).showAlertInformative(title: "Login error", message: "Error: \(error)")
+    }
+    
+    
 }
