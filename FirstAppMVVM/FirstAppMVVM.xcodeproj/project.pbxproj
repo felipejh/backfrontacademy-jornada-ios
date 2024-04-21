@@ -42,9 +42,12 @@
 		BBDD6D7F2BD5146800470046 /* HomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = BBDD6D7E2BD5146800470046 /* HomeData.json */; };
 		BBDD6D822BD514EB00470046 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD6D812BD514EB00470046 /* HomeService.swift */; };
 		BBDD6D842BD51A3200470046 /* HomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD6D832BD51A3200470046 /* HomeData.swift */; };
+		D91F18273F5C5BA4F75C0324 /* Pods_FirstAppMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA204C197A942CB76BBA9B5C /* Pods_FirstAppMVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1120C23531AB27C52F14D37D /* Pods-FirstAppMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAppMVVM.debug.xcconfig"; path = "Target Support Files/Pods-FirstAppMVVM/Pods-FirstAppMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		B2AADF827541BEEF135F9699 /* Pods-FirstAppMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAppMVVM.release.xcconfig"; path = "Target Support Files/Pods-FirstAppMVVM/Pods-FirstAppMVVM.release.xcconfig"; sourceTree = "<group>"; };
 		BB2680272BCDEC8B00E905AC /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		BB2680292BCDEF0700E905AC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BB26802D2BCDF17700E905AC /* StoryCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -79,6 +82,7 @@
 		BBDD6D7E2BD5146800470046 /* HomeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeData.json; sourceTree = "<group>"; };
 		BBDD6D812BD514EB00470046 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		BBDD6D832BD51A3200470046 /* HomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeData.swift; sourceTree = "<group>"; };
+		CA204C197A942CB76BBA9B5C /* Pods_FirstAppMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstAppMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +93,30 @@
 				BBDD6D3A2BD3D59D00470046 /* FirebaseAuth in Frameworks */,
 				BBDD6D3E2BD3D59D00470046 /* FirebaseCrashlytics in Frameworks */,
 				BBDD6D3C2BD3D59D00470046 /* FirebaseAuthCombine-Community in Frameworks */,
+				D91F18273F5C5BA4F75C0324 /* Pods_FirstAppMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99A8B622CC8B675070C66E78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1120C23531AB27C52F14D37D /* Pods-FirstAppMVVM.debug.xcconfig */,
+				B2AADF827541BEEF135F9699 /* Pods-FirstAppMVVM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B80F4AE3DF72312AE6371998 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA204C197A942CB76BBA9B5C /* Pods_FirstAppMVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB26802B2BCDF13500E905AC /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +261,8 @@
 			children = (
 				BBDC74C82BCC70F3008B0B97 /* FirstAppMVVM */,
 				BBDC74C72BCC70F3008B0B97 /* Products */,
+				99A8B622CC8B675070C66E78 /* Pods */,
+				B80F4AE3DF72312AE6371998 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -398,10 +422,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBDC74DA2BCC70F5008B0B97 /* Build configuration list for PBXNativeTarget "FirstAppMVVM" */;
 			buildPhases = (
+				BF226640F165A791425378E3 /* [CP] Check Pods Manifest.lock */,
 				BBDC74C22BCC70F3008B0B97 /* Sources */,
 				BBDC74C32BCC70F3008B0B97 /* Frameworks */,
 				BBDC74C42BCC70F3008B0B97 /* Resources */,
 				BBDD6D7C2BD46F7900470046 /* ShellScript */,
+				182B85CAA9C62BF841D13876 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -468,6 +494,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		182B85CAA9C62BF841D13876 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirstAppMVVM/Pods-FirstAppMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirstAppMVVM/Pods-FirstAppMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAppMVVM/Pods-FirstAppMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BBDD6D7C2BD46F7900470046 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -490,6 +533,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+		BF226640F165A791425378E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirstAppMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -664,6 +729,7 @@
 		};
 		BBDC74DB2BCC70F5008B0B97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1120C23531AB27C52F14D37D /* Pods-FirstAppMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -671,6 +737,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Q9FMLRW284;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FirstAppMVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -697,12 +764,14 @@
 		};
 		BBDC74DC2BCC70F5008B0B97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2AADF827541BEEF135F9699 /* Pods-FirstAppMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q9FMLRW284;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FirstAppMVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

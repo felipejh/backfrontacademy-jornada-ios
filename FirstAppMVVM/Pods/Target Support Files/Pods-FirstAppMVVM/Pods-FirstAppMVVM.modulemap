@@ -1,0 +1,6 @@
+framework module Pods_FirstAppMVVM {
+  umbrella header "Pods-FirstAppMVVM-umbrella.h"
+
+  export *
+  module * { export * }
+}

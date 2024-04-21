@@ -26,6 +26,9 @@ class LoginVC: UIViewController {
         loginScreen?.delegate(delegate: self)
         loginScreen?.configTextFieldDelegate(delegate: self)
         viewModel.delegate(delegate: self)
+        
+        loginScreen?.emailTextField.text = "felipe@gmail.com"
+        loginScreen?.passwordTextField.text = "123456"
     }
     
     
