@@ -63,6 +63,9 @@
 		BBDD6D762BD40A0C00470046 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD6D752BD40A0C00470046 /* SignUpScreen.swift */; };
 		BBDD6D782BD40A5000470046 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD6D772BD40A5000470046 /* SignUpVC.swift */; };
 		BBDD6D7A2BD40AB200470046 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD6D792BD40AB200470046 /* SignUpViewModel.swift */; };
+		BBDD6D7F2BD5146800470046 /* HomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = BBDD6D7E2BD5146800470046 /* HomeData.json */; };
+		BBDD6D822BD514EB00470046 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD6D812BD514EB00470046 /* HomeService.swift */; };
+		BBDD6D842BD51A3200470046 /* HomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD6D832BD51A3200470046 /* HomeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +100,9 @@
 		BBDD6D752BD40A0C00470046 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		BBDD6D772BD40A5000470046 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		BBDD6D792BD40AB200470046 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		BBDD6D7E2BD5146800470046 /* HomeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeData.json; sourceTree = "<group>"; };
+		BBDD6D812BD514EB00470046 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		BBDD6D832BD51A3200470046 /* HomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +183,7 @@
 			children = (
 				BBA867F52BCE83C000CEE0D9 /* Stories.swift */,
 				BBC200A62BD1292100708276 /* Posts.swift */,
+				BBDD6D832BD51A3200470046 /* HomeData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -294,6 +301,8 @@
 		BBDC74C82BCC70F3008B0B97 /* FirstAppMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				BBDD6D802BD514D000470046 /* Service */,
+				BBDD6D7D2BD5142000470046 /* Mock */,
 				BBDD6D712BD409AF00470046 /* SignUp */,
 				BBDD6D6E2BD3E57D00470046 /* Alert */,
 				BBA867F42BCE83B000CEE0D9 /* Model */,
@@ -414,6 +423,22 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		BBDD6D7D2BD5142000470046 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				BBDD6D7E2BD5146800470046 /* HomeData.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		BBDD6D802BD514D000470046 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BBDD6D812BD514EB00470046 /* HomeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -505,6 +530,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBDD6D7F2BD5146800470046 /* HomeData.json in Resources */,
 				BBDC74D62BCC70F5008B0B97 /* LaunchScreen.storyboard in Resources */,
 				BBDC74D32BCC70F5008B0B97 /* Assets.xcassets in Resources */,
 				BBDD6D2B2BD3D41000470046 /* GoogleService-Info.plist in Resources */,
@@ -547,6 +573,7 @@
 				BBC200B02BD12D9600708276 /* PostCollectionViewCellScreen.swift in Sources */,
 				BBDD6D6D2BD3DB3A00470046 /* LoginViewModel.swift in Sources */,
 				BBDD6D702BD3E58F00470046 /* Alert.swift in Sources */,
+				BBDD6D842BD51A3200470046 /* HomeData.swift in Sources */,
 				BBA867FE2BCE8A2700CEE0D9 /* StoryCollectionViewCellScreen.swift in Sources */,
 				BBC200A22BD125C700708276 /* PostCardCollectionViewCell.swift in Sources */,
 				BBDC74CE2BCC70F3008B0B97 /* HomeVC.swift in Sources */,
@@ -567,6 +594,7 @@
 				BBDC74E22BCD335E008B0B97 /* UIView + Extension.swift in Sources */,
 				BBDC74CC2BCC70F3008B0B97 /* SceneDelegate.swift in Sources */,
 				BB2680312BCDF1D800E905AC /* StoryCardCollectionViewCellScreen.swift in Sources */,
+				BBDD6D822BD514EB00470046 /* HomeService.swift in Sources */,
 				BBA867F62BCE83C000CEE0D9 /* Stories.swift in Sources */,
 				BBC200A72BD1292100708276 /* Posts.swift in Sources */,
 			);
