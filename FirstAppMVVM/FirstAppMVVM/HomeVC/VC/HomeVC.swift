@@ -29,10 +29,23 @@ class HomeVC: UIViewController {
 
 extension HomeVC: HomeViewModelProtocol {
     func success() {
+        self.homeScreen?.collectionView.reloadData()
         print(#function)
         DispatchQueue.main.async {
             self.homeScreen?.configProtocolsCollectionView(delegate: self, dataSource: self)
+            self.homeScreen?.collectionView.reloadData()
         }
+        self.homeScreen?.collectionView.reloadData()
+        self.homeScreen?.collectionView.reloadData()
+        self.homeScreen?.collectionView.reloadData()
+        self.homeScreen?.collectionView.reloadData()
+        self.homeScreen?.collectionView.reloadData()
+        self.homeScreen?.collectionView.reloadData()
+        self.homeScreen?.collectionView.reloadData()
+        self.homeScreen?.collectionView.reloadData()
+        self.homeScreen?.collectionView.reloadData()
+        self.homeScreen?.collectionView.reloadData()
+        
     }
     
     func error() {
