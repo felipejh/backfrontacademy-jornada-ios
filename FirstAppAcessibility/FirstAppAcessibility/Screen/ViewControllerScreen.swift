@@ -7,7 +7,17 @@
 
 import UIKit
 
+protocol ViewControllerScreenProtocol: AnyObject {
+    func tappedLoginButton()
+}
+
 class ViewControllerScreen: UIView {
+    
+    private weak var delegate: ViewControllerScreenProtocol?
+    
+    public func delegate(delegate: ViewControllerScreenProtocol) {
+        self.delegate = delegate
+    }
     
     lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -75,8 +85,22 @@ class ViewControllerScreen: UIView {
         
         button.setTitle("Login", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 28, weight: .bold)
+        button.addTarget(self, action: #selector(tappedLoginButton), for: .touchUpInside)
         
         return button
+    }()
+    
+    @objc func tappedLoginButton(_ sender: UIButton) {
+        delegate?.tappedLoginButton()
+    }
+    
+    lazy var personImageView: UIImageView = {
+        let img = UIImageView()
+        img.translatesAutoresizingMaskIntoConstraints = false
+        
+        img.image = UIImage(systemName: "person")
+        
+        return img
     }()
     
     override init(frame: CGRect) {
@@ -98,6 +122,7 @@ class ViewControllerScreen: UIView {
         self.addSubview(positionFourLabel)
         self.addSubview(positionFiveLabel)
         addSubview(loginButton)
+        addSubview(personImageView)
     }
     
     private func configConstraints() {
@@ -122,6 +147,11 @@ class ViewControllerScreen: UIView {
             
             loginButton.topAnchor.constraint(equalTo: positionTwoLabel.bottomAnchor, constant: 20),
             loginButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            
+            personImageView.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 20),
+            personImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            personImageView.heightAnchor.constraint(equalToConstant: 120),
+            personImageView.widthAnchor.constraint(equalToConstant: 120),
         ])
     }
     
