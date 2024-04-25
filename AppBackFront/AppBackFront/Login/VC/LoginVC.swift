@@ -6,29 +6,60 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginVC: UIViewController {
     
     var loginScreen: LoginScreen?
+    var auth: Auth?
     
     override func loadView() {
         loginScreen = LoginScreen()
         view = loginScreen
-        
-        loginScreen?.delegate(delegate: self)
-        loginScreen?.configTextFieldsDelegate(delegate: self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         dismissKeyboard()
+        auth = Auth.auth()
+        loginScreen?.delegate(delegate: self)
+        loginScreen?.configTextFieldsDelegate(delegate: self)
+        isEnableLoginButton(false)
+    }
+    
+    private func validateTextField() {
+        if (loginScreen?.emailTextField.text ?? "").isValid(validType: .email) &&
+            (loginScreen?.passwordTextField.text ?? "").isValid(validType: .password) {
+            isEnableLoginButton(true)
+        } else {
+            isEnableLoginButton(false)
+        }
+    }
+    
+    private func isEnableLoginButton(_ isEnabled: Bool) {
+        if isEnabled {
+            loginScreen?.loginButton.setTitleColor(.white, for: .normal)
+            loginScreen?.loginButton.isEnabled = true
+            loginScreen?.subImageView.alpha = 1
+        } else {
+            loginScreen?.loginButton.setTitleColor(.lightGray, for: .normal)
+            loginScreen?.loginButton.isEnabled = false
+            loginScreen?.subLoginImageView.alpha = 0.4
+        }
     }
     
 }
 
 extension LoginVC: LoginScreenProtocol {
     func tappedLoginButton() {
-        print(#function)
+        auth?.signIn(withEmail: loginScreen?.emailTextField.text ?? "", password: loginScreen?.passwordTextField.text ?? "", completion: { user, error in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+            } else {
+                print("Sucesso no login")
+            }
+        })
+        
     }
 }
 
@@ -65,5 +96,6 @@ extension LoginVC: UITextFieldDelegate {
                 break
             }
         }
+        validateTextField()
     }
 }
