@@ -7,7 +7,17 @@
 
 import UIKit
 
+protocol LoginScreenProtocol: AnyObject {
+    func tappedLoginButton()
+}
+
 class LoginScreen: UIView {
+    
+    private weak var delegate: LoginScreenProtocol?
+    
+    public func delegate(delegate: LoginScreenProtocol) {
+        self.delegate = delegate
+    }
 
     lazy var subImageView: UIImageView = {
         let image = UIImageView()
@@ -50,7 +60,7 @@ class LoginScreen: UIView {
         return label
     }()
     
-    lazy var loginTextField: UITextField = {
+    lazy var emailTextField: UITextField = {
         let tf = UITextField()
         tf.translatesAutoresizingMaskIntoConstraints = false
         
@@ -174,7 +184,7 @@ class LoginScreen: UIView {
     }
     
     @objc func tappedLoginButton(_ sender: UIButton) {
-        
+        delegate?.tappedLoginButton()
     }
     
     
@@ -193,7 +203,7 @@ class LoginScreen: UIView {
         self.addSubview(logoAppImageView)
         self.addSubview(loginLabel)
         self.addSubview(descriptionLabel)
-        self.addSubview(loginTextField)
+        self.addSubview(emailTextField)
         self.addSubview(passwordTextField)
         self.addSubview(recoverPasswordButton)
         self.addSubview(subLoginImageView)
@@ -223,23 +233,23 @@ class LoginScreen: UIView {
             descriptionLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
             descriptionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             
-            loginTextField.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 32),
-            loginTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            loginTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            loginTextField.heightAnchor.constraint(equalToConstant: 39),
+            emailTextField.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 32),
+            emailTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            emailTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            emailTextField.heightAnchor.constraint(equalToConstant: 39),
             
-            passwordTextField.topAnchor.constraint(equalTo: loginTextField.bottomAnchor, constant: 11),
-            passwordTextField.leadingAnchor.constraint(equalTo: loginTextField.leadingAnchor),
-            passwordTextField.trailingAnchor.constraint(equalTo: loginTextField.trailingAnchor),
-            passwordTextField.heightAnchor.constraint(equalTo: loginTextField.heightAnchor),
+            passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 11),
+            passwordTextField.leadingAnchor.constraint(equalTo: emailTextField.leadingAnchor),
+            passwordTextField.trailingAnchor.constraint(equalTo: emailTextField.trailingAnchor),
+            passwordTextField.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
             
             recoverPasswordButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 9),
             recoverPasswordButton.trailingAnchor.constraint(equalTo: passwordTextField.trailingAnchor),
             recoverPasswordButton.heightAnchor.constraint(equalToConstant: 16),
             
             subLoginImageView.topAnchor.constraint(equalTo: recoverPasswordButton.bottomAnchor, constant: 36),
-            subLoginImageView.leadingAnchor.constraint(equalTo: loginTextField.leadingAnchor),
-            subLoginImageView.trailingAnchor.constraint(equalTo: loginTextField.trailingAnchor),
+            subLoginImageView.leadingAnchor.constraint(equalTo: emailTextField.leadingAnchor),
+            subLoginImageView.trailingAnchor.constraint(equalTo: emailTextField.trailingAnchor),
             subLoginImageView.heightAnchor.constraint(equalToConstant: 43),
             
             loginButton.topAnchor.constraint(equalTo: subLoginImageView.topAnchor),
@@ -265,6 +275,11 @@ class LoginScreen: UIView {
             signInMetamaskLabel.centerXAnchor.constraint(equalTo: signInMetamaskView.centerXAnchor),
             signInMetamaskLabel.centerYAnchor.constraint(equalTo: signInMetamaskView.centerYAnchor),
         ])
+    }
+    
+    public func configTextFieldsDelegate(delegate: UITextFieldDelegate) {
+        emailTextField.delegate = delegate
+        passwordTextField.delegate = delegate
     }
     
 }
