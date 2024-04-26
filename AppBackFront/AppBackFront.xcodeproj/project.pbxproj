@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0637862BDBAA1E005B7B4D /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0637852BDBAA1E005B7B4D /* AlertController.swift */; };
 		BB51A4862BC93893003AC1FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51A4852BC93893003AC1FB /* AppDelegate.swift */; };
 		BB51A4882BC93893003AC1FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51A4872BC93893003AC1FB /* SceneDelegate.swift */; };
 		BB51A48F2BC93896003AC1FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB51A48E2BC93896003AC1FB /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB0637852BDBAA1E005B7B4D /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		BB51A4822BC93893003AC1FB /* AppBackFront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBackFront.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB51A4852BC93893003AC1FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB51A4872BC93893003AC1FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB0637842BDBAA02005B7B4D /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				BB0637852BDBAA1E005B7B4D /* AlertController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		BB51A4792BC93893003AC1FB = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +77,7 @@
 		BB51A4842BC93893003AC1FB /* AppBackFront */ = {
 			isa = PBXGroup;
 			children = (
+				BB0637842BDBAA02005B7B4D /* Alert */,
 				BBBBED8E2BD912E700D22B54 /* Utils */,
 				BB51A4992BC9409E003AC1FB /* Login */,
 				BB51A4852BC93893003AC1FB /* AppDelegate.swift */,
@@ -210,6 +221,7 @@
 				BB51A49F2BC9413C003AC1FB /* LoginScreen.swift in Sources */,
 				BB51A4882BC93893003AC1FB /* SceneDelegate.swift in Sources */,
 				BBBBED912BD9134200D22B54 /* UIViewController+Extension.swift in Sources */,
+				BB0637862BDBAA1E005B7B4D /* AlertController.swift in Sources */,
 				BBBBED932BD9191100D22B54 /* String+Extension.swift in Sources */,
 				BB51A49B2BC940B6003AC1FB /* LoginVC.swift in Sources */,
 			);
