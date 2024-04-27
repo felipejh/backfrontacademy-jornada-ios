@@ -19,7 +19,7 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        homeScreen?.configProtocolsCollectionView(delegate: self, dataSource: self)
+        
         viewModel.delegate(delegate: self)
         viewModel.fetchAllRequest()
     }
@@ -33,7 +33,6 @@ extension HomeVC: HomeViewModelProtocol {
         print(#function)
         DispatchQueue.main.async {
             self.homeScreen?.configProtocolsCollectionView(delegate: self, dataSource: self)
-            self.homeScreen?.collectionView.reloadData()
         }
         self.homeScreen?.collectionView.reloadData()
         self.homeScreen?.collectionView.reloadData()
