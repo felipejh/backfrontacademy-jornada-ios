@@ -42,12 +42,17 @@ extension HomeVC: HomeViewModelDelegate {
 
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return viewModel.numberOfItemsInSection
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NftFilterCollectioViewCell.identifier, for: indexPath) as? NftFilterCollectioViewCell
+        
+        cell?.setupCell(filter: viewModel.loadCurrentFilterNft(indexPath: indexPath))
+        return cell ?? UICollectionViewCell()
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return viewModel.sizeForItem
+    }
 }
