@@ -12,6 +12,8 @@
 		BB0637892BDBAF5F005B7B4D /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0637882BDBAF5F005B7B4D /* TabBarVC.swift */; };
 		BB06378F2BDBB005005B7B4D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB06378E2BDBB005005B7B4D /* HomeVC.swift */; };
 		BB0637912BDBB1FE005B7B4D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0637902BDBB1FE005B7B4D /* HomeScreen.swift */; };
+		BB0CD8782BE0F3D000E74E81 /* NftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0CD8772BE0F3D000E74E81 /* NftTableViewCell.swift */; };
+		BB0CD87B2BE0F5D100E74E81 /* NftTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0CD87A2BE0F5D100E74E81 /* NftTableViewCellScreen.swift */; };
 		BB3F46A62BDD9AFE0099EDA5 /* NftFilterCollectioViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3F46A52BDD9AFE0099EDA5 /* NftFilterCollectioViewCell.swift */; };
 		BB3F46A92BDD9B480099EDA5 /* NftFilterCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3F46A82BDD9B480099EDA5 /* NftFilterCollectionViewCellScreen.swift */; };
 		BB51A4862BC93893003AC1FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51A4852BC93893003AC1FB /* AppDelegate.swift */; };
@@ -40,6 +42,8 @@
 		BB0637882BDBAF5F005B7B4D /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		BB06378E2BDBB005005B7B4D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		BB0637902BDBB1FE005B7B4D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		BB0CD8772BE0F3D000E74E81 /* NftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCell.swift; sourceTree = "<group>"; };
+		BB0CD87A2BE0F5D100E74E81 /* NftTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCellScreen.swift; sourceTree = "<group>"; };
 		BB3F46A52BDD9AFE0099EDA5 /* NftFilterCollectioViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftFilterCollectioViewCell.swift; sourceTree = "<group>"; };
 		BB3F46A82BDD9B480099EDA5 /* NftFilterCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftFilterCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		BB51A4822BC93893003AC1FB /* AppBackFront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBackFront.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,21 +139,39 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		BB0CD8762BE0F39A00E74E81 /* NftTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BB0CD8792BE0F5BB00E74E81 /* Screen */,
+				BB0CD8772BE0F3D000E74E81 /* NftTableViewCell.swift */,
+			);
+			path = NftTableViewCell;
+			sourceTree = "<group>";
+		};
+		BB0CD8792BE0F5BB00E74E81 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BB0CD87A2BE0F5D100E74E81 /* NftTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		BB3F46A32BDD9AD10099EDA5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				BB3F46A42BDD9AD90099EDA5 /* NftFilter */,
+				BB0CD8762BE0F39A00E74E81 /* NftTableViewCell */,
+				BB3F46A42BDD9AD90099EDA5 /* NftFilterCollectionViewCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		BB3F46A42BDD9AD90099EDA5 /* NftFilter */ = {
+		BB3F46A42BDD9AD90099EDA5 /* NftFilterCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				BB3F46A72BDD9B2A0099EDA5 /* Screen */,
 				BB3F46A52BDD9AFE0099EDA5 /* NftFilterCollectioViewCell.swift */,
 			);
-			path = NftFilter;
+			path = NftFilterCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		BB3F46A72BDD9B2A0099EDA5 /* Screen */ = {
@@ -428,6 +450,8 @@
 				BB3F46A62BDD9AFE0099EDA5 /* NftFilterCollectioViewCell.swift in Sources */,
 				BB0637892BDBAF5F005B7B4D /* TabBarVC.swift in Sources */,
 				BB51A49B2BC940B6003AC1FB /* LoginVC.swift in Sources */,
+				BB0CD87B2BE0F5D100E74E81 /* NftTableViewCellScreen.swift in Sources */,
+				BB0CD8782BE0F3D000E74E81 /* NftTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +604,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -613,6 +638,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

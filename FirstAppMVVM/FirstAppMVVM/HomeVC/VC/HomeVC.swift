@@ -23,8 +23,6 @@ class HomeVC: UIViewController {
         viewModel.delegate(delegate: self)
         viewModel.fetchAllRequest()
     }
-
-
 }
 
 extension HomeVC: HomeViewModelProtocol {
