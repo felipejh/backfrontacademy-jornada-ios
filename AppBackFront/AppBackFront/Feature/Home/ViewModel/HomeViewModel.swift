@@ -16,6 +16,7 @@ class HomeViewModel {
     
     private let service = HomeService()
     private var nftData: NFTData?
+    private var searchNftData: NFTData?
     private weak var delegate: HomeViewModelDelegate?
     
     public func delegate(delegate: HomeViewModelDelegate) {
@@ -28,6 +29,7 @@ class HomeViewModel {
             service.getHomeFromJson { result, failure in
                 if let result {
                     self.nftData = result
+                    self.searchNftData = result
                     self.delegate?.success()
                 } else {
                     print(failure as Any)
@@ -38,6 +40,7 @@ class HomeViewModel {
             service.getHome { result, failure in
                 if let result {
                     self.nftData = result
+                    self.searchNftData = result
                     self.delegate?.success()
                 } else {
                     print(failure as Any)
@@ -49,11 +52,11 @@ class HomeViewModel {
     
     // MARK: Filter CollectionView
     public var numberOfItemsInSection: Int {
-        return nftData?.filterListNft?.count ?? 0
+        return searchNftData?.filterListNft?.count ?? 0
     }
     
     public func loadCurrentFilterNft(indexPath: IndexPath) -> FilterNft {
-        return nftData?.filterListNft?[indexPath.row] ?? FilterNft()
+        return searchNftData?.filterListNft?[indexPath.row] ?? FilterNft()
     }
     
     public var sizeForItem: CGSize {
@@ -62,14 +65,25 @@ class HomeViewModel {
     
     // MARK: NFT TableViewCell
     public var numberOfRowsInSection: Int {
-        return nftData?.nftList?.count ?? 0
+        return searchNftData?.nftList?.count ?? 0
     }
     
     public func loadCurrentNft(indexPath: IndexPath) -> Nft {
-        return nftData?.nftList?[indexPath.row] ?? Nft()
+        return searchNftData?.nftList?[indexPath.row] ?? Nft()
     }
     
     public var heightForRow: CGFloat {
         return 360
+    }
+    
+    // MARK: Filter
+    public func filterSearchText(_ text: String) {
+        if text.isEmpty {
+            searchNftData?.nftList = nftData?.nftList
+        } else {
+            searchNftData?.nftList = nftData?.nftList?.filter({ nft in
+                return nft.userName?.lowercased().contains(text.lowercased()) ?? false
+            })
+        }
     }
 }
