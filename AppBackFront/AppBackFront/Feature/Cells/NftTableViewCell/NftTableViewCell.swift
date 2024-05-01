@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class NftTableViewCell: UITableViewCell {
-
+    
     public static let identifier: String = String(describing: NftTableViewCell.self)
     
     private lazy var screen: NftTableViewCellScreen = {
@@ -49,7 +50,16 @@ class NftTableViewCell: UITableViewCell {
     
     public func setupCell(data: Nft) {
         if let urlNFT: URL = URL(string: data.nftImage ?? ""), let urlUser: URL = URL(string: data.userImage ?? "") {
+            screen.nftImageView.af.setImage(withURL: urlNFT, placeholderImage: UIImage(named: "threeButtons"))
+            screen.nftImageView.backgroundColor = .white
             
+            screen.userImageView.af.setImage(withURL: urlUser, placeholderImage: UIImage(systemName: "person.circle.fill"))
+            screen.userImageView.backgroundColor = .white
         }
+        
+        screen.priceLabel.text = data.price ?? ""
+        screen.priceValueLabel.text = "\(data.nftPrice ?? 0.0) ETH"
+        screen.ownedByPriceLabel.text = data.ownedBy
+        screen.userLabel.text = data.userName
     }
 }

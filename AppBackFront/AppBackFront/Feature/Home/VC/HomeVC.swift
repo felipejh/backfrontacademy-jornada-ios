@@ -11,7 +11,7 @@ class HomeVC: UIViewController {
     
     var screen: HomeScreen?
     var viewModel = HomeViewModel()
-
+    
     override func loadView() {
         screen = HomeScreen()
         view = screen
@@ -22,7 +22,7 @@ class HomeVC: UIViewController {
         
         viewModel.delegate(delegate: self)
         viewModel.fetchRequest(.request)
-
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,7 +32,11 @@ class HomeVC: UIViewController {
 
 extension HomeVC: HomeViewModelDelegate {
     func success() {
-        screen?.configCollectionViewProtocols(delegate: self, dataSource: self)
+        DispatchQueue.main.async {
+            self.screen?.configCollectionViewProtocols(delegate: self, dataSource: self)
+            self.screen?.configTableViewProtocols(delegate: self, dataSource: self)
+            self.screen?.tableView.reloadData()
+        }
     }
     
     func error() {
@@ -54,5 +58,23 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return viewModel.sizeForItem
+    }
+}
+
+extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.numberOfRowsInSection
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: NftTableViewCell.identifier, for: indexPath) as? NftTableViewCell
+        
+        cell?.setupCell(data: viewModel.loadCurrentNft(indexPath: indexPath))
+        
+        return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return viewModel.heightForRow
     }
 }

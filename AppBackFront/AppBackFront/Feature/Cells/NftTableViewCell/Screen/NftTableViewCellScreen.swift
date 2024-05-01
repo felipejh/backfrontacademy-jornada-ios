@@ -13,7 +13,7 @@ class NftTableViewCellScreen: UIView {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         
-        view.backgroundColor = UIColor(red: 153/255, green: 153/255, blue: 153/255, alpha: 1.0)
+        view.backgroundColor = UIColor(red: 153/255, green: 153/255, blue: 153/255, alpha: 1)
         view.clipsToBounds = true
         view.layer.cornerRadius = 18
         
@@ -36,6 +36,7 @@ class NftTableViewCellScreen: UIView {
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 24
+        imageView.tintColor = .black
         
         return imageView
     }()
@@ -82,6 +83,10 @@ class NftTableViewCellScreen: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+
+        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+        addElements()
+        configConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -91,7 +96,7 @@ class NftTableViewCellScreen: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1)
+        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
         addElements()
         configConstraints()
     }

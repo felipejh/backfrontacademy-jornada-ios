@@ -59,7 +59,7 @@ class HomeScreen: UIView {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
-        // TO DO: Register
+        tableView.register(NftTableViewCell.self, forCellReuseIdentifier: NftTableViewCell.identifier)
         tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
         tableView.separatorStyle = .none
         
@@ -84,7 +84,7 @@ class HomeScreen: UIView {
         super.init(frame: frame)
         
         backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
-        addViews()
+        addElements()
         configConstraints()
     }
     
@@ -92,7 +92,7 @@ class HomeScreen: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func addViews() {
+    private func addElements() {
         addSubview(viewBackground)
         viewBackground.addSubview(logoImageView)
         viewBackground.addSubview(searchBar)
