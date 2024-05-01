@@ -14,7 +14,7 @@ enum NameCellNftDetail: Int {
 
 class NftDetailVC: UIViewController {
     
-    private let viewModel: NftDetailViewModel?
+    private let viewModel: NftDetailViewModel
     private var screen: NftDetailScreen?
     
     override func loadView() {
@@ -39,7 +39,7 @@ class NftDetailVC: UIViewController {
 
 extension NftDetailVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.numberOfRowsInSection ?? 0
+        return viewModel.numberOfRowsInSection
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -47,12 +47,12 @@ extension NftDetailVC: UITableViewDelegate, UITableViewDataSource {
         switch NameCellNftDetail(rawValue: indexPath.row) {
         case .nftImage:
             let cell = tableView.dequeueReusableCell(withIdentifier: NftImageTableViewCell.identifier, for: indexPath) as? NftImageTableViewCell
-            cell?.setupCell(urlImage: viewModel?.nftImage ?? "", delegate: self)
+            cell?.setupCell(urlImage: viewModel.nftImage, delegate: self)
             
             return cell ?? UITableViewCell()
         case .description:
             let cell = tableView.dequeueReusableCell(withIdentifier: NftDescriptionTableViewCell.identifier, for: indexPath) as? NftDescriptionTableViewCell
-            cell?.setupCell(id: viewModel?.idNft ?? 0, title: viewModel?.titleNft ?? "", description: viewModel?.descriptionNft ?? "")
+            cell?.setupCell(id: viewModel.idNft, title: viewModel.titleNft, description: viewModel.descriptionNft)
             
             return cell ?? UITableViewCell()
         default:
@@ -61,7 +61,7 @@ extension NftDetailVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 400
+        return viewModel.heightForRowAt(indexPath: indexPath, width: view.frame.width)
     }
 }
 
