@@ -23,7 +23,7 @@ class LastestDealTableViewCellScreen: UIView {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
-        // TO DO: Register
+        tableView.register(ListOffersTableViewCell.self, forCellReuseIdentifier: ListOffersTableViewCell.identifier)
         tableView.separatorStyle = .none
         tableView.isScrollEnabled = false
         
