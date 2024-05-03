@@ -18,6 +18,8 @@
 		BB05F0EC2BE503C400D232EC /* WalletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB05F0EB2BE503C400D232EC /* WalletService.swift */; };
 		BB05F0EE2BE5061F00D232EC /* WalletData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB05F0ED2BE5061F00D232EC /* WalletData.swift */; };
 		BB05F0F02BE5064900D232EC /* WalletData.json in Resources */ = {isa = PBXBuildFile; fileRef = BB05F0EF2BE5064900D232EC /* WalletData.json */; };
+		BB05F0F32BE50BEE00D232EC /* QuotationEthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB05F0F22BE50BEE00D232EC /* QuotationEthTableViewCell.swift */; };
+		BB05F0F62BE50C1800D232EC /* QuotationEthTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB05F0F52BE50C1800D232EC /* QuotationEthTableViewCellScreen.swift */; };
 		BB0637862BDBAA1E005B7B4D /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0637852BDBAA1E005B7B4D /* AlertController.swift */; };
 		BB0637892BDBAF5F005B7B4D /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0637882BDBAF5F005B7B4D /* TabBarVC.swift */; };
 		BB06378F2BDBB005005B7B4D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB06378E2BDBB005005B7B4D /* HomeVC.swift */; };
@@ -70,6 +72,8 @@
 		BB05F0EB2BE503C400D232EC /* WalletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletService.swift; sourceTree = "<group>"; };
 		BB05F0ED2BE5061F00D232EC /* WalletData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletData.swift; sourceTree = "<group>"; };
 		BB05F0EF2BE5064900D232EC /* WalletData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WalletData.json; sourceTree = "<group>"; };
+		BB05F0F22BE50BEE00D232EC /* QuotationEthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationEthTableViewCell.swift; sourceTree = "<group>"; };
+		BB05F0F52BE50C1800D232EC /* QuotationEthTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationEthTableViewCellScreen.swift; sourceTree = "<group>"; };
 		BB0637852BDBAA1E005B7B4D /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		BB0637882BDBAF5F005B7B4D /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		BB06378E2BDBB005005B7B4D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -180,6 +184,23 @@
 				BB05F0EB2BE503C400D232EC /* WalletService.swift */,
 			);
 			path = WalletService;
+			sourceTree = "<group>";
+		};
+		BB05F0F12BE50BCA00D232EC /* QuotationEthTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BB05F0F42BE50BFC00D232EC /* Screen */,
+				BB05F0F22BE50BEE00D232EC /* QuotationEthTableViewCell.swift */,
+			);
+			path = QuotationEthTableViewCell;
+			sourceTree = "<group>";
+		};
+		BB05F0F42BE50BFC00D232EC /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BB05F0F52BE50C1800D232EC /* QuotationEthTableViewCellScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 		BB0637842BDBAA02005B7B4D /* Alert */ = {
@@ -360,6 +381,7 @@
 		BB3F46A32BDD9AD10099EDA5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				BB05F0F12BE50BCA00D232EC /* QuotationEthTableViewCell */,
 				BB31A1C72BE3968800683897 /* ListOffersTableViewCell */,
 				BB31A1BE2BE2B9C900683897 /* LastestDealTableViewCell */,
 				BB31A1B82BE27A7B00683897 /* NftDescriptionTableViewCell */,
@@ -663,6 +685,7 @@
 				BB31A1BD2BE27B1E00683897 /* NftDescriptionTableViewCellScreen.swift in Sources */,
 				BB05F0DD2BE4FB2300D232EC /* MagnifyingGlassVC.swift in Sources */,
 				BB3F46A92BDD9B480099EDA5 /* NftFilterCollectionViewCellScreen.swift in Sources */,
+				BB05F0F32BE50BEE00D232EC /* QuotationEthTableViewCell.swift in Sources */,
 				BBD73AFE2BDD09B500B3D09A /* HomeService.swift in Sources */,
 				BB0637862BDBAA1E005B7B4D /* AlertController.swift in Sources */,
 				BB0637912BDBB1FE005B7B4D /* HomeScreen.swift in Sources */,
@@ -674,6 +697,7 @@
 				BB31A1C62BE2EEA200683897 /* LatestDealTableViewCellViewModel.swift in Sources */,
 				BB31A1BA2BE27AB600683897 /* NftDescriptionTableViewCell.swift in Sources */,
 				BB05F0E32BE5011000D232EC /* WalletVC.swift in Sources */,
+				BB05F0F62BE50C1800D232EC /* QuotationEthTableViewCellScreen.swift in Sources */,
 				BB31A1AB2BE25BCC00683897 /* NftDetailVC.swift in Sources */,
 				BB0637892BDBAF5F005B7B4D /* TabBarVC.swift in Sources */,
 				BB00C5302BE4737B00300988 /* CACornerMask+Extension.swift in Sources */,
