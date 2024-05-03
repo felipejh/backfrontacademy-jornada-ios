@@ -10,6 +10,8 @@
 		097EBE01CBFA6CB99C780F94 /* Pods_AppBackFront.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5D65A6C79DEEB278B664ED /* Pods_AppBackFront.framework */; };
 		BB00C52E2BE4720D00300988 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00C52D2BE4720D00300988 /* UIView+Extension.swift */; };
 		BB00C5302BE4737B00300988 /* CACornerMask+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00C52F2BE4737B00300988 /* CACornerMask+Extension.swift */; };
+		BB05F0DD2BE4FB2300D232EC /* MagnifyingGlassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB05F0DC2BE4FB2300D232EC /* MagnifyingGlassVC.swift */; };
+		BB05F0E02BE4FB4F00D232EC /* MagnifyingGlassScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB05F0DF2BE4FB4F00D232EC /* MagnifyingGlassScreen.swift */; };
 		BB0637862BDBAA1E005B7B4D /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0637852BDBAA1E005B7B4D /* AlertController.swift */; };
 		BB0637892BDBAF5F005B7B4D /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0637882BDBAF5F005B7B4D /* TabBarVC.swift */; };
 		BB06378F2BDBB005005B7B4D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB06378E2BDBB005005B7B4D /* HomeVC.swift */; };
@@ -54,6 +56,8 @@
 		6F5D65A6C79DEEB278B664ED /* Pods_AppBackFront.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBackFront.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB00C52D2BE4720D00300988 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BB00C52F2BE4737B00300988 /* CACornerMask+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CACornerMask+Extension.swift"; sourceTree = "<group>"; };
+		BB05F0DC2BE4FB2300D232EC /* MagnifyingGlassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyingGlassVC.swift; sourceTree = "<group>"; };
+		BB05F0DF2BE4FB4F00D232EC /* MagnifyingGlassScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyingGlassScreen.swift; sourceTree = "<group>"; };
 		BB0637852BDBAA1E005B7B4D /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		BB0637882BDBAF5F005B7B4D /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		BB06378E2BDBB005005B7B4D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -115,6 +119,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BB05F0DB2BE4FB0600D232EC /* MagnifyingGlass */ = {
+			isa = PBXGroup;
+			children = (
+				BB05F0DE2BE4FB3C00D232EC /* Screen */,
+				BB05F0DC2BE4FB2300D232EC /* MagnifyingGlassVC.swift */,
+			);
+			path = MagnifyingGlass;
+			sourceTree = "<group>";
+		};
+		BB05F0DE2BE4FB3C00D232EC /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BB05F0DF2BE4FB4F00D232EC /* MagnifyingGlassScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		BB0637842BDBAA02005B7B4D /* Alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +155,7 @@
 		BB06378A2BDBAF9C005B7B4D /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				BB05F0DB2BE4FB0600D232EC /* MagnifyingGlass */,
 				BB31A1A92BE25BB500683897 /* NftDetail */,
 				BB3F46A32BDD9AD10099EDA5 /* Cells */,
 				BB06378B2BDBAFC1005B7B4D /* Home */,
@@ -581,8 +603,10 @@
 				BB51A4882BC93893003AC1FB /* SceneDelegate.swift in Sources */,
 				BB06378F2BDBB005005B7B4D /* HomeVC.swift in Sources */,
 				BBBBED912BD9134200D22B54 /* UIViewController+Extension.swift in Sources */,
+				BB05F0E02BE4FB4F00D232EC /* MagnifyingGlassScreen.swift in Sources */,
 				BBD73B002BDD09F600B3D09A /* GenericService.swift in Sources */,
 				BB31A1BD2BE27B1E00683897 /* NftDescriptionTableViewCellScreen.swift in Sources */,
+				BB05F0DD2BE4FB2300D232EC /* MagnifyingGlassVC.swift in Sources */,
 				BB3F46A92BDD9B480099EDA5 /* NftFilterCollectionViewCellScreen.swift in Sources */,
 				BBD73AFE2BDD09B500B3D09A /* HomeService.swift in Sources */,
 				BB0637862BDBAA1E005B7B4D /* AlertController.swift in Sources */,
