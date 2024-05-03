@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		097EBE01CBFA6CB99C780F94 /* Pods_AppBackFront.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5D65A6C79DEEB278B664ED /* Pods_AppBackFront.framework */; };
+		BB00C52E2BE4720D00300988 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00C52D2BE4720D00300988 /* UIView+Extension.swift */; };
+		BB00C5302BE4737B00300988 /* CACornerMask+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00C52F2BE4737B00300988 /* CACornerMask+Extension.swift */; };
 		BB0637862BDBAA1E005B7B4D /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0637852BDBAA1E005B7B4D /* AlertController.swift */; };
 		BB0637892BDBAF5F005B7B4D /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0637882BDBAF5F005B7B4D /* TabBarVC.swift */; };
 		BB06378F2BDBB005005B7B4D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB06378E2BDBB005005B7B4D /* HomeVC.swift */; };
@@ -50,6 +52,8 @@
 		23E1546F395980654F058806 /* Pods-AppBackFront.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBackFront.release.xcconfig"; path = "Target Support Files/Pods-AppBackFront/Pods-AppBackFront.release.xcconfig"; sourceTree = "<group>"; };
 		412B78566DE22D4F6442DB0D /* Pods-AppBackFront.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBackFront.debug.xcconfig"; path = "Target Support Files/Pods-AppBackFront/Pods-AppBackFront.debug.xcconfig"; sourceTree = "<group>"; };
 		6F5D65A6C79DEEB278B664ED /* Pods_AppBackFront.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBackFront.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB00C52D2BE4720D00300988 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		BB00C52F2BE4737B00300988 /* CACornerMask+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CACornerMask+Extension.swift"; sourceTree = "<group>"; };
 		BB0637852BDBAA1E005B7B4D /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		BB0637882BDBAF5F005B7B4D /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		BB06378E2BDBB005005B7B4D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -398,6 +402,8 @@
 			children = (
 				BBBBED902BD9134200D22B54 /* UIViewController+Extension.swift */,
 				BBBBED922BD9191100D22B54 /* String+Extension.swift */,
+				BB00C52D2BE4720D00300988 /* UIView+Extension.swift */,
+				BB00C52F2BE4737B00300988 /* CACornerMask+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -590,8 +596,10 @@
 				BB31A1BA2BE27AB600683897 /* NftDescriptionTableViewCell.swift in Sources */,
 				BB31A1AB2BE25BCC00683897 /* NftDetailVC.swift in Sources */,
 				BB0637892BDBAF5F005B7B4D /* TabBarVC.swift in Sources */,
+				BB00C5302BE4737B00300988 /* CACornerMask+Extension.swift in Sources */,
 				BB51A49B2BC940B6003AC1FB /* LoginVC.swift in Sources */,
 				BB31A1C92BE396B000683897 /* ListOffersTableViewCell.swift in Sources */,
+				BB00C52E2BE4720D00300988 /* UIView+Extension.swift in Sources */,
 				BB0CD87B2BE0F5D100E74E81 /* NftTableViewCellScreen.swift in Sources */,
 				BB0CD8782BE0F3D000E74E81 /* NftTableViewCell.swift in Sources */,
 				BB31A1C02BE2B9F500683897 /* LastestDealTableViewCell.swift in Sources */,

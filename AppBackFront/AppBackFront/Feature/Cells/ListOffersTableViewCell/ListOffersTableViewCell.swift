@@ -22,7 +22,8 @@ class ListOffersTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-//        selectionStyle = .none
+        selectionStyle = .none
+        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1)
         addElements()
         configConstraints()
     }
@@ -47,6 +48,14 @@ class ListOffersTableViewCell: UITableViewCell {
         screen.nameUserLabel.text = data.userName ?? ""
         screen.nftPriceLabel.text = "\(data.nftPrice ?? 0) ETH"
         screen.lastVisualizationLabel.text = data.lastAccess ?? ""
+        
+        if isInitial {
+            screen.roundCorners(cornerRadius: 20, typeCorners: [.topLeft, .topRight])
+        }
+        
+        if isFinal {
+            screen.roundCorners(cornerRadius: 20, typeCorners: [.bottomLeft, .bottomRight])
+        }
     }
     
     private func addElements() {

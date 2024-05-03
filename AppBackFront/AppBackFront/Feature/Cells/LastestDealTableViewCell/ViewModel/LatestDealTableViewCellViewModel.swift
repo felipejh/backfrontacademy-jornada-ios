@@ -7,6 +7,10 @@
 
 import UIKit
 
+enum HeightLatestDetail: CGFloat {
+    case height = 70
+}
+
 class LatestDealTableViewCellViewModel: NSObject {
     
     private var nft: Nft?
@@ -24,7 +28,7 @@ class LatestDealTableViewCellViewModel: NSObject {
     }
     
     public var heightForRowAt: CGFloat {
-        return 70
+        return HeightLatestDetail.height.rawValue
     }
     
     public func loadCurrentLatestDetail(indexPath: IndexPath) -> LatestDeal {
