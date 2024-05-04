@@ -38,11 +38,23 @@ extension ProfileVC: UITableViewDelegate, UITableViewDataSource {
             return cell ?? UITableViewCell()
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: ProfileTableViewCell.identifier, for: indexPath) as? ProfileTableViewCell
+            
+            cell?.setupCell(delegate: self)
             return cell ?? UITableViewCell()
         }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 280
+    }
+}
+
+extension ProfileVC: ProfileTableViewCellScreenProtocol {
+    func tappedLogoutButton() {
+        print(#function)
+        
+        let vc = LoginVC()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
 }
