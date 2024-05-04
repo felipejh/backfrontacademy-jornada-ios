@@ -22,7 +22,13 @@ class TabBarVC: UITabBarController {
         setViewControllers([home, wallet], animated: false)
         tabBar.isTranslucent = false
         tabBar.tintColor = UIColor(red: 130/255, green: 26/255, blue: 201/255, alpha: 1.0)
-        tabBar.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+//        tabBar.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+        
+        let tabbarAppearance: UITabBarAppearance = UITabBarAppearance()
+        tabbarAppearance.configureWithDefaultBackground()
+        tabbarAppearance.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+        tabBar.standardAppearance = tabbarAppearance
+        tabBar.scrollEdgeAppearance = tabbarAppearance
         
         guard let items = tabBar.items else { return }
         
