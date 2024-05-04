@@ -46,10 +46,10 @@ class WalletViewModel {
     }
     
     public var numberOfRowsInSection: Int {
-        return 1
+        return 2
     }
     
-    public func loadCurrentQuotationEthereum(indexPath: IndexPath) -> QuotationEthereum {
+    public var quotationEthereum: QuotationEthereum {
         return walletData?.quotationEthereum ?? QuotationEthereum()
     }
     
@@ -57,8 +57,14 @@ class WalletViewModel {
         switch WalletNameCell(rawValue: indexPath.row) {
         case .quotationEth:
             return 250
+        case .transactionList:
+            return HeightLatestTransactions.height.rawValue * CGFloat(walletData?.latestTransactionsCell?.listOfTransactions?.count ?? 0) + 75 // 75 é o espaçamento
         default:
             return 0
         }
+    }
+    
+    public var latestTransactionsCell: LatestTransactionsCell {
+        return walletData?.latestTransactionsCell ?? LatestTransactionsCell()
     }
 }
