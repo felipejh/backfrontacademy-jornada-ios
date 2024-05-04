@@ -34,6 +34,8 @@
 		BB0C2CE92BE650E300F4C8FF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C2CE82BE650E300F4C8FF /* ProfileViewModel.swift */; };
 		BB0C2CEC2BE652D000F4C8FF /* ProfileImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C2CEB2BE652D000F4C8FF /* ProfileImageTableViewCell.swift */; };
 		BB0C2CEF2BE6530400F4C8FF /* ProfileImageTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C2CEE2BE6530400F4C8FF /* ProfileImageTableViewCellScreen.swift */; };
+		BB0C2CF22BE655ED00F4C8FF /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C2CF12BE655ED00F4C8FF /* ProfileTableViewCell.swift */; };
+		BB0C2CF52BE655FF00F4C8FF /* ProfileTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C2CF42BE655FF00F4C8FF /* ProfileTableViewCellScreen.swift */; };
 		BB0CD8782BE0F3D000E74E81 /* NftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0CD8772BE0F3D000E74E81 /* NftTableViewCell.swift */; };
 		BB0CD87B2BE0F5D100E74E81 /* NftTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0CD87A2BE0F5D100E74E81 /* NftTableViewCellScreen.swift */; };
 		BB31A1AB2BE25BCC00683897 /* NftDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31A1AA2BE25BCC00683897 /* NftDetailVC.swift */; };
@@ -98,6 +100,8 @@
 		BB0C2CE82BE650E300F4C8FF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		BB0C2CEB2BE652D000F4C8FF /* ProfileImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageTableViewCell.swift; sourceTree = "<group>"; };
 		BB0C2CEE2BE6530400F4C8FF /* ProfileImageTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageTableViewCellScreen.swift; sourceTree = "<group>"; };
+		BB0C2CF12BE655ED00F4C8FF /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		BB0C2CF42BE655FF00F4C8FF /* ProfileTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCellScreen.swift; sourceTree = "<group>"; };
 		BB0CD8772BE0F3D000E74E81 /* NftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCell.swift; sourceTree = "<group>"; };
 		BB0CD87A2BE0F5D100E74E81 /* NftTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCellScreen.swift; sourceTree = "<group>"; };
 		BB31A1AA2BE25BCC00683897 /* NftDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftDetailVC.swift; sourceTree = "<group>"; };
@@ -365,6 +369,23 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		BB0C2CF02BE655C600F4C8FF /* ProfileTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BB0C2CF32BE655F100F4C8FF /* Screen */,
+				BB0C2CF12BE655ED00F4C8FF /* ProfileTableViewCell.swift */,
+			);
+			path = ProfileTableViewCell;
+			sourceTree = "<group>";
+		};
+		BB0C2CF32BE655F100F4C8FF /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BB0C2CF42BE655FF00F4C8FF /* ProfileTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		BB0CD8762BE0F39A00E74E81 /* NftTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -488,6 +509,7 @@
 		BB3F46A32BDD9AD10099EDA5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				BB0C2CF02BE655C600F4C8FF /* ProfileTableViewCell */,
 				BB0C2CEA2BE652B500F4C8FF /* ProfileImageTableViewCell */,
 				BB0C2CDB2BE643B900F4C8FF /* ListOfTransactionTableViewCell */,
 				BB0C2CD22BE6408100F4C8FF /* LatestTransactionsTableViewCell */,
@@ -786,6 +808,7 @@
 				BB31A1CC2BE3971A00683897 /* ListOffersTableViewCellScreen.swift in Sources */,
 				BB51A49F2BC9413C003AC1FB /* LoginScreen.swift in Sources */,
 				BB0C2CD72BE640B800F4C8FF /* LatestTransactionsTableViewCellScreen.swift in Sources */,
+				BB0C2CF22BE655ED00F4C8FF /* ProfileTableViewCell.swift in Sources */,
 				BB05F0E62BE5012B00D232EC /* WalletScreen.swift in Sources */,
 				BB0C2CDA2BE6423200F4C8FF /* LatestTransactionsTableViewCellViewModel.swift in Sources */,
 				BB51A4882BC93893003AC1FB /* SceneDelegate.swift in Sources */,
@@ -796,6 +819,7 @@
 				BB05F0E02BE4FB4F00D232EC /* MagnifyingGlassScreen.swift in Sources */,
 				BB0C2CE52BE650B500F4C8FF /* ProfileVC.swift in Sources */,
 				BBD73B002BDD09F600B3D09A /* GenericService.swift in Sources */,
+				BB0C2CF52BE655FF00F4C8FF /* ProfileTableViewCellScreen.swift in Sources */,
 				BB31A1BD2BE27B1E00683897 /* NftDescriptionTableViewCellScreen.swift in Sources */,
 				BB05F0DD2BE4FB2300D232EC /* MagnifyingGlassVC.swift in Sources */,
 				BB3F46A92BDD9B480099EDA5 /* NftFilterCollectionViewCellScreen.swift in Sources */,
