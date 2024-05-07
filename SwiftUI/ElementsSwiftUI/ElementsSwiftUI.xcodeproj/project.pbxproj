@@ -11,6 +11,7 @@
 		BB2405CC2BEA34AD004BE7B7 /* ToogleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2405CB2BEA34AD004BE7B7 /* ToogleScreen.swift */; };
 		BB2405CE2BEA34B0004BE7B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2405CD2BEA34B0004BE7B7 /* Assets.xcassets */; };
 		BB2405D12BEA34B0004BE7B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2405D02BEA34B0004BE7B7 /* Preview Assets.xcassets */; };
+		BB2405D82BEA36A1004BE7B7 /* DatePickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2405D72BEA36A1004BE7B7 /* DatePickerScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BB2405CB2BEA34AD004BE7B7 /* ToogleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToogleScreen.swift; sourceTree = "<group>"; };
 		BB2405CD2BEA34B0004BE7B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB2405D02BEA34B0004BE7B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB2405D72BEA36A1004BE7B7 /* DatePickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				BB2405C92BEA34AD004BE7B7 /* ElementsSwiftUIApp.swift */,
 				BB2405CB2BEA34AD004BE7B7 /* ToogleScreen.swift */,
+				BB2405D72BEA36A1004BE7B7 /* DatePickerScreen.swift */,
 				BB2405CD2BEA34B0004BE7B7 /* Assets.xcassets */,
 				BB2405CF2BEA34B0004BE7B7 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				BB2405CC2BEA34AD004BE7B7 /* ToogleScreen.swift in Sources */,
 				BB2405CA2BEA34AD004BE7B7 /* ElementsSwiftUIApp.swift in Sources */,
+				BB2405D82BEA36A1004BE7B7 /* DatePickerScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
