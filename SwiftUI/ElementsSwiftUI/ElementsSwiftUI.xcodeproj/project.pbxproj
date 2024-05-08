@@ -14,6 +14,7 @@
 		BB2405D82BEA36A1004BE7B7 /* DatePickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2405D72BEA36A1004BE7B7 /* DatePickerScreen.swift */; };
 		BB7A95312BEB7CB9008C6092 /* StepperSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A95302BEB7CB9008C6092 /* StepperSwiftUI.swift */; };
 		BB7A95332BEB80FB008C6092 /* ProgressViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A95322BEB80FB008C6092 /* ProgressViewScreen.swift */; };
+		BB7A95352BEB83E4008C6092 /* ImageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A95342BEB83E4008C6092 /* ImageScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BB2405D72BEA36A1004BE7B7 /* DatePickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerScreen.swift; sourceTree = "<group>"; };
 		BB7A95302BEB7CB9008C6092 /* StepperSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperSwiftUI.swift; sourceTree = "<group>"; };
 		BB7A95322BEB80FB008C6092 /* ProgressViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewScreen.swift; sourceTree = "<group>"; };
+		BB7A95342BEB83E4008C6092 /* ImageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				BB2405D72BEA36A1004BE7B7 /* DatePickerScreen.swift */,
 				BB7A95302BEB7CB9008C6092 /* StepperSwiftUI.swift */,
 				BB7A95322BEB80FB008C6092 /* ProgressViewScreen.swift */,
+				BB7A95342BEB83E4008C6092 /* ImageScreen.swift */,
 				BB2405CD2BEA34B0004BE7B7 /* Assets.xcassets */,
 				BB2405CF2BEA34B0004BE7B7 /* Preview Content */,
 			);
@@ -151,6 +154,7 @@
 				BB2405D82BEA36A1004BE7B7 /* DatePickerScreen.swift in Sources */,
 				BB7A95332BEB80FB008C6092 /* ProgressViewScreen.swift in Sources */,
 				BB7A95312BEB7CB9008C6092 /* StepperSwiftUI.swift in Sources */,
+				BB7A95352BEB83E4008C6092 /* ImageScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
