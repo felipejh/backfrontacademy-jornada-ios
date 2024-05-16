@@ -12,6 +12,7 @@
 		BB8CCCD42BF6118300315E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8CCCD32BF6118300315E2A /* Assets.xcassets */; };
 		BB8CCCD72BF6118300315E2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8CCCD62BF6118300315E2A /* Preview Assets.xcassets */; };
 		BB8CCCDE2BF6132900315E2A /* ListObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8CCCDD2BF6132900315E2A /* ListObject.swift */; };
+		BB8CCCE02BF615B300315E2A /* ListWithSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8CCCDF2BF615B300315E2A /* ListWithSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		BB8CCCD32BF6118300315E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB8CCCD62BF6118300315E2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB8CCCDD2BF6132900315E2A /* ListObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListObject.swift; sourceTree = "<group>"; };
+		BB8CCCDF2BF615B300315E2A /* ListWithSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +57,10 @@
 			children = (
 				BB8CCCCF2BF6118100315E2A /* ListAppApp.swift */,
 				BB8CCCD12BF6118100315E2A /* ListBasic.swift */,
+				BB8CCCDD2BF6132900315E2A /* ListObject.swift */,
+				BB8CCCDF2BF615B300315E2A /* ListWithSection.swift */,
 				BB8CCCD32BF6118300315E2A /* Assets.xcassets */,
 				BB8CCCD52BF6118300315E2A /* Preview Content */,
-				BB8CCCDD2BF6132900315E2A /* ListObject.swift */,
 			);
 			path = ListApp;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB8CCCD22BF6118100315E2A /* ListBasic.swift in Sources */,
+				BB8CCCE02BF615B300315E2A /* ListWithSection.swift in Sources */,
 				BB8CCCD02BF6118100315E2A /* ListAppApp.swift in Sources */,
 				BB8CCCDE2BF6132900315E2A /* ListObject.swift in Sources */,
 			);
