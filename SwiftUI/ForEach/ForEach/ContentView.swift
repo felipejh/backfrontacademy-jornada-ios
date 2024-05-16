@@ -20,13 +20,22 @@ struct ContentView: View {
         Person(name: "Juliana", age: 40)
     ]
     
+    @State var selectedPosition: Int? = nil
+    @State var selectedPersonId: UUID? = nil
+    
     var body: some View {
         VStack {
             ForEach(listPerson) { person in
                 Group() {
                     Text("Pessoa ID: \(person.id)")
                     Text("Pessoa Nome: \(person.name)")
-                }.padding()
+                }
+                .frame(height: 45)
+                .background(selectedPersonId == person.id ? Color.red : Color.gray)
+                .onTapGesture {
+                    selectedPersonId = person.id
+                }
+//                .padding()
             }
         }
         .padding()
@@ -46,8 +55,12 @@ struct ContentView: View {
             HStack(spacing: 15) {
                 ForEach(0..<26) { index in
                     Text("Posição : \(index)")
+                        .padding(10)
                         .frame(height: 45)
-                        .background(Color.blue)
+                        .background(selectedPosition == index ? Color.red : Color.blue)
+                        .onTapGesture {
+                            selectedPosition = index
+                        }
                 }
             }.padding()
         }
