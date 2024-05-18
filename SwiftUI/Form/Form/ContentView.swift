@@ -13,10 +13,25 @@ struct ContentView: View {
     @State var email: String = ""
     @State var feedback: String = ""
     @State var rate: Float = 5
+    @State var isPresented = false
     
     var isDisabledButton: Bool {
         return name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ||
         email.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+    
+    var messageDescription: String {
+        if feedback.isEmpty {
+            return "Nome: \(name)\nE-mail: \(email)\nNota: \(rate)"
+        } else {
+            return "Nome: \(name)\nE-mail: \(email)\nNota: \(rate)\nFeedback: \(feedback)"
+        }
+    }
+    
+    func clearAll() {
+        name = ""
+        email = ""
+        feedback = ""
     }
     
     var body: some View {
@@ -67,7 +82,7 @@ struct ContentView: View {
                 
                 Section {
                     Button(action: {
-                        print("Clicked")
+                        isPresented.toggle()
                     }, label: {
                         Text("Enviar feedback")
                             .frame(maxWidth: .infinity)
@@ -80,6 +95,18 @@ struct ContentView: View {
                 }
                 
             }
+        }
+        .navigationTitle("Feedback")
+        .navigationBarTitleDisplayMode(.large)
+        .alert("Feedback", isPresented: $isPresented) {
+            Button(action: {
+                isPresented.toggle()
+                clearAll()
+            }, label: {
+                Text("Enviar")
+            })
+        } message: {
+            Text(messageDescription)
         }
     }
 }
