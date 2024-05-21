@@ -36,6 +36,8 @@ struct LoginView: View {
                         SecureField(text: $password) {
                             Text("Password")
                                 .foregroundStyle(.gray)
+                                .autocorrectionDisabled()
+                                .textInputAutocapitalization(.never)
                         }
                         
                     }
