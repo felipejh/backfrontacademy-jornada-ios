@@ -12,6 +12,8 @@ struct RegisterView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var passwordConfirm: String = ""
+    @State private var isAlertPresented: Bool = false
+    @State private var goNotes: Bool = false
     
     var body: some View {
         ZStack {
@@ -21,7 +23,7 @@ struct RegisterView: View {
                 Text("Register")
                     .font(.system(size: 55, weight: .bold))
                     .foregroundStyle(.white)
-                    .padding(.top, 10)
+                    .padding(.top, 5)
                     .padding(.bottom, 50)
                 
                 
@@ -53,7 +55,11 @@ struct RegisterView: View {
                 Spacer()
                 
                 Button(action: {
-                    print("clicked")
+                    if password == passwordConfirm {
+                        goNotes.toggle()
+                    } else {
+                        isAlertPresented.toggle()
+                    }
                 }, label: {
                     Text("Register")
                         .frame(maxWidth: .infinity)
@@ -68,6 +74,15 @@ struct RegisterView: View {
             .padding(.horizontal, 20)
             .padding(.bottom, 50)
         }
+        .alert("Atenttion", isPresented: $isAlertPresented) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text("Check password and confimf password and try again.")
+        }
+        .navigationDestination(isPresented: $goNotes) {
+            NotesView()
+        }
+
     }
     
     private var isButtonDisabled: Bool {

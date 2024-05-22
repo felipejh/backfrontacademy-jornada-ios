@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct NotesAppApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
             LoginView()
