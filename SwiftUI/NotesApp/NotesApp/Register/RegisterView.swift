@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct RegisterView: View {
     
@@ -14,6 +15,7 @@ struct RegisterView: View {
     @State private var passwordConfirm: String = ""
     @State private var isAlertPresented: Bool = false
     @State private var goNotes: Bool = false
+    @State private var errorMessage: String = ""
     
     var body: some View {
         ZStack {
@@ -55,11 +57,7 @@ struct RegisterView: View {
                 Spacer()
                 
                 Button(action: {
-                    if password == passwordConfirm {
-                        goNotes.toggle()
-                    } else {
-                        isAlertPresented.toggle()
-                    }
+                    registerUser()
                 }, label: {
                     Text("Register")
                         .frame(maxWidth: .infinity)
@@ -77,7 +75,7 @@ struct RegisterView: View {
         .alert("Atenttion", isPresented: $isAlertPresented) {
             Button("OK", role: .cancel) {}
         } message: {
-            Text("Check password and confimf password and try again.")
+            Text(errorMessage)
         }
         .navigationDestination(isPresented: $goNotes) {
             NotesView()
@@ -87,6 +85,24 @@ struct RegisterView: View {
     
     private var isButtonDisabled: Bool {
         return email.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || passwordConfirm.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        
+    }
+    
+    private func registerUser() {
+        if password == passwordConfirm {
+            Auth.auth().createUser(withEmail: email, password: password) { result, error in
+                if let error {
+                    errorMessage = error.localizedDescription
+                    isAlertPresented.toggle()
+                } else {
+                    goNotes.toggle()
+                }
+            }
+        } else {
+            errorMessage = "Check password and confimf password and try again."
+            isAlertPresented.toggle()
+        }
+        
         
     }
 }

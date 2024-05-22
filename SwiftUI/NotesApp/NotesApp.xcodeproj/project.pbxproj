@@ -15,6 +15,7 @@
 		BB7DE5B52BFDFBD5003CF748 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = BB7DE5B42BFDFBD5003CF748 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		BB7DE5B72BFDFBD5003CF748 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = BB7DE5B62BFDFBD5003CF748 /* FirebaseAppCheck */; };
 		BB7DE5B92BFDFD04003CF748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DE5B82BFDFD04003CF748 /* AppDelegate.swift */; };
+		BB7DE5BC2BFDFE46003CF748 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BB7DE5BB2BFDFE46003CF748 /* FirebaseAuth */; };
 		BB7E73662BF8B4EF00E90F9D /* NotesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7E73652BF8B4EF00E90F9D /* NotesAppApp.swift */; };
 		BB7E73682BF8B4EF00E90F9D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7E73672BF8B4EF00E90F9D /* LoginView.swift */; };
 		BB7E736A2BF8B4F200E90F9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7E73692BF8B4F200E90F9D /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB7DE5B32BFDFBD5003CF748 /* FirebaseAnalyticsSwift in Frameworks */,
+				BB7DE5BC2BFDFE46003CF748 /* FirebaseAuth in Frameworks */,
 				BB7DE5AF2BFDFBD5003CF748 /* FirebaseAnalytics in Frameworks */,
 				BB7DE5B12BFDFBD5003CF748 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				BB7DE5B72BFDFBD5003CF748 /* FirebaseAppCheck in Frameworks */,
@@ -68,11 +70,19 @@
 			path = Notes;
 			sourceTree = "<group>";
 		};
+		BB7DE5BA2BFDFE46003CF748 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB7E73592BF8B4EF00E90F9D = {
 			isa = PBXGroup;
 			children = (
 				BB7E73642BF8B4EF00E90F9D /* NotesApp */,
 				BB7E73632BF8B4EF00E90F9D /* Products */,
+				BB7DE5BA2BFDFE46003CF748 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +164,7 @@
 				BB7DE5B22BFDFBD5003CF748 /* FirebaseAnalyticsSwift */,
 				BB7DE5B42BFDFBD5003CF748 /* FirebaseAnalyticsWithoutAdIdSupport */,
 				BB7DE5B62BFDFBD5003CF748 /* FirebaseAppCheck */,
+				BB7DE5BB2BFDFE46003CF748 /* FirebaseAuth */,
 			);
 			productName = NotesApp;
 			productReference = BB7E73622BF8B4EF00E90F9D /* NotesApp.app */;
@@ -461,6 +472,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BB7DE5AD2BFDFBD5003CF748 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAppCheck;
+		};
+		BB7DE5BB2BFDFE46003CF748 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB7DE5AD2BFDFBD5003CF748 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
