@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0DE9552C00A4B000339041 /* AddNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0DE9542C00A4B000339041 /* AddNotesView.swift */; };
 		BB2535872BFB5B190000F644 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2535862BFB5B190000F644 /* NotesView.swift */; };
 		BB7DE5AC2BFDFB1C003CF748 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB7DE5AB2BFDFB1C003CF748 /* GoogleService-Info.plist */; };
 		BB7DE5AF2BFDFBD5003CF748 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BB7DE5AE2BFDFBD5003CF748 /* FirebaseAnalytics */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB0DE9542C00A4B000339041 /* AddNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotesView.swift; sourceTree = "<group>"; };
 		BB2535862BFB5B190000F644 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		BB7DE5AB2BFDFB1C003CF748 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BB7DE5B82BFDFD04003CF748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				BBC395512BFF4A8F00ED72E4 /* ViewModel */,
 				BB2535862BFB5B190000F644 /* NotesView.swift */,
+				BB0DE9542C00A4B000339041 /* AddNotesView.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -102,7 +105,7 @@
 		BB7E73642BF8B4EF00E90F9D /* NotesApp */ = {
 			isa = PBXGroup;
 			children = (
-				BBC3954E2BFF4A4800ED72E4 /* Group */,
+				BBC3954E2BFF4A4800ED72E4 /* Model */,
 				BB7E73762BF8D95900E90F9D /* Utils */,
 				BB7E73752BF8D8C000E90F9D /* Login */,
 				BB2535842BFB5A870000F644 /* Register */,
@@ -148,12 +151,12 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		BBC3954E2BFF4A4800ED72E4 /* Group */ = {
+		BBC3954E2BFF4A4800ED72E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				BBC3954F2BFF4A5300ED72E4 /* Note.swift */,
 			);
-			path = Group;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BBC395512BFF4A8F00ED72E4 /* ViewModel */ = {
@@ -253,6 +256,7 @@
 				BBC395532BFF4A9D00ED72E4 /* NotesViewModel.swift in Sources */,
 				BB2535872BFB5B190000F644 /* NotesView.swift in Sources */,
 				BB7E73662BF8B4EF00E90F9D /* NotesAppApp.swift in Sources */,
+				BB0DE9552C00A4B000339041 /* AddNotesView.swift in Sources */,
 				BB7E73792BF8D97B00E90F9D /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
