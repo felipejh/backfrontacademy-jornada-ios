@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB03A6572C01EEA60010C48E /* NotesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB03A6562C01EEA60010C48E /* NotesDetailView.swift */; };
 		BB0DE9552C00A4B000339041 /* AddNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0DE9542C00A4B000339041 /* AddNotesView.swift */; };
 		BB2535872BFB5B190000F644 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2535862BFB5B190000F644 /* NotesView.swift */; };
 		BB7DE5AC2BFDFB1C003CF748 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB7DE5AB2BFDFB1C003CF748 /* GoogleService-Info.plist */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB03A6562C01EEA60010C48E /* NotesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailView.swift; sourceTree = "<group>"; };
 		BB0DE9542C00A4B000339041 /* AddNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotesView.swift; sourceTree = "<group>"; };
 		BB2535862BFB5B190000F644 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		BB7DE5AB2BFDFB1C003CF748 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				BBC395512BFF4A8F00ED72E4 /* ViewModel */,
 				BB2535862BFB5B190000F644 /* NotesView.swift */,
 				BB0DE9542C00A4B000339041 /* AddNotesView.swift */,
+				BB03A6562C01EEA60010C48E /* NotesDetailView.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				BB7DE5B92BFDFD04003CF748 /* AppDelegate.swift in Sources */,
 				BB7E73742BF8C30300E90F9D /* RegisterView.swift in Sources */,
 				BBC395502BFF4A5300ED72E4 /* Note.swift in Sources */,
+				BB03A6572C01EEA60010C48E /* NotesDetailView.swift in Sources */,
 				BB7E73682BF8B4EF00E90F9D /* LoginView.swift in Sources */,
 				BBC395532BFF4A9D00ED72E4 /* NotesViewModel.swift in Sources */,
 				BB2535872BFB5B190000F644 /* NotesView.swift in Sources */,
