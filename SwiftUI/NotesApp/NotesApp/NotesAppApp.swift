@@ -11,9 +11,15 @@ import SwiftUI
 struct NotesAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    private var loginViewModel = LoginViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            if loginViewModel.getAuthUser() == nil {
+                LoginView()
+            } else {
+                NotesView()
+            }
         }
     }
 }

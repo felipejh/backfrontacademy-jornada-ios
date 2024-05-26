@@ -20,40 +20,57 @@ struct NotesView: View {
     
     @StateObject var viewModel = NotesViewModel()
     @State var isGoAddNote: Bool = false
+    @Environment(\.dismiss) var dismiss
+    private var loginViewModel = LoginViewModel()
+    private var loggedUser: AuthUser?
     
     var body: some View {
-        List($viewModel.notes, editActions: .all) { $note in
-            NavigationLink {
-                NotesDetailView(note: $note)
-            } label: {
-                HStack {
-                    Image(systemName: "pencil")
-                        .frame(width: 24, height: 24)
-                        .padding(.trailing, 8)
-                    VStack(alignment: .leading) {
-                        Text(note.title)
-                            .font(.headline)
-                        Text(note.content)
-                            .font(.subheadline)
+        NavigationStack {
+            List($viewModel.notes, editActions: .all) { $note in
+                NavigationLink {
+                    NotesDetailView(note: $note)
+                } label: {
+                    HStack {
+                        Image(systemName: "pencil")
+                            .frame(width: 24, height: 24)
+                            .padding(.trailing, 8)
+                        VStack(alignment: .leading) {
+                            Text(note.title)
+                                .font(.headline)
+                            Text(note.content)
+                                .font(.subheadline)
+                        }
                     }
                 }
             }
-        }
-        .navigationBarBackButtonHidden()
-        .navigationTitle("Notas")
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button("Adicionar") {
-                    isGoAddNote.toggle()
+            .navigationBarBackButtonHidden()
+            .navigationTitle("Notas")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Adicionar") {
+                        isGoAddNote.toggle()
+                    }
                 }
+                            ToolbarItem(placement: .topBarLeading) {
+                                Button("Sair do App: \(userEmail)") {
+                                    UserDefaults.standard.removeObject(forKey: "auth")
+                                    dismiss()
+                                }
+                            }
             }
+            //        .navigationDestination(isPresented: $isGoAddNote) {
+            //            Color.blue
+            //        }
+            .sheet(isPresented: $isGoAddNote, content: {
+                AddNotesView(viewModel: viewModel)
+            })
         }
-//        .navigationDestination(isPresented: $isGoAddNote) {
-//            Color.blue
-//        }
-        .sheet(isPresented: $isGoAddNote, content: {
-            AddNotesView(viewModel: viewModel)
-        })
+    }
+    
+    var userEmail: String {
+        let loggedUser = loginViewModel.getAuthUser()
+        
+        return loggedUser?.email ?? ""
     }
 }
 

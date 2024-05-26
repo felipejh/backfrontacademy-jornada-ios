@@ -38,6 +38,6 @@ struct AddNotesView: View {
 }
 
 #Preview {
-    var viewModel = NotesViewModel()
+    let viewModel = NotesViewModel()
     return AddNotesView(viewModel: viewModel)
 }

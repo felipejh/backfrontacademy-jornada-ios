@@ -17,6 +17,8 @@ struct LoginView: View {
     @State private var isAlertPresented: Bool = false
     @State private var errorMessage: String = ""
     
+    private var viewModel = LoginViewModel()
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -54,8 +56,8 @@ struct LoginView: View {
                     Spacer()
                     
                     Button(action: {
-//                        loginUser()
-                        goNotes.toggle()
+                        loginUser()
+//                        goNotes.toggle()
                     }, label: {
                         Text("Login")
                             .frame(width: 180, height: 45)
@@ -100,6 +102,9 @@ struct LoginView: View {
                 errorMessage = error.localizedDescription
                 isAlertPresented.toggle()
             } else {
+                let authUser = AuthUser(email: email, token: "authToken")
+                viewModel.saveAuthUser(authUser: authUser)
+                
                 goNotes.toggle()
             }
         }
