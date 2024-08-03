@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State var viewModel: HomeViewModel = HomeViewModel()
+    
     var body: some View {
         NavigationStack {
             ZStack {
                 Color(red: 237/255, green: 237/255, blue: 237/255)
-                Text("Hello, World!")
+                HStack(spacing: 10) {
+                    ScrollView(.vertical) {
+                        LazyVStack {
+                            ForEach(viewModel.storyList) { story in
+                                StoryView(story: story)
+                            }
+                        }
+                    }
+                    .background(Color.white)
+                    .frame(width: 90)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                    
+                    Spacer()
+                    
+                    Text("Hello, World!")
+                }
+                .padding()
+                
+                
             }.toolbarTitleDisplayMode(.inline)
                 .toolbar(content: {
                     ToolbarItem(placement: .topBarLeading) {
@@ -55,7 +76,7 @@ struct HomeView: View {
                 })
             
         }
-
+        
     }
 }
 
