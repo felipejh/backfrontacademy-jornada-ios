@@ -18,6 +18,9 @@
 		BB868C902C0490EF00BE31C1 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB868C8F2C0490EF00BE31C1 /* NotificationView.swift */; };
 		BB868C932C04912F00BE31C1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB868C922C04912F00BE31C1 /* ProfileView.swift */; };
 		BBE9A3C32C5E6EEE0092421C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE9A3C22C5E6EEE0092421C /* HomeViewModel.swift */; };
+		BBE9A3C82C5E73AB0092421C /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE9A3C72C5E73AB0092421C /* PostView.swift */; };
+		BBE9A3CA2C5E754A0092421C /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE9A3C92C5E754A0092421C /* PostData.swift */; };
+		BBE9A3CC2C5E765A0092421C /* PostMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE9A3CB2C5E765A0092421C /* PostMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		BB868C8F2C0490EF00BE31C1 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		BB868C922C04912F00BE31C1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BBE9A3C22C5E6EEE0092421C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BBE9A3C72C5E73AB0092421C /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		BBE9A3C92C5E754A0092421C /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		BBE9A3CB2C5E765A0092421C /* PostMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 			children = (
 				BB5BF93D2C4490F800C1F005 /* Mock */,
 				BB5BF93B2C44904A00C1F005 /* StotyData.swift */,
+				BBE9A3C92C5E754A0092421C /* PostData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -67,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				BB5BF93E2C44911400C1F005 /* StoryMock.swift */,
+				BBE9A3CB2C5E765A0092421C /* PostMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 		BBE9A3C42C5E735E0092421C /* PostView */ = {
 			isa = PBXGroup;
 			children = (
+				BBE9A3C72C5E73AB0092421C /* PostView.swift */,
 			);
 			path = PostView;
 			sourceTree = "<group>";
@@ -223,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB5BF9392C448FA600C1F005 /* StoryView.swift in Sources */,
+				BBE9A3CC2C5E765A0092421C /* PostMock.swift in Sources */,
 				BBE9A3C32C5E6EEE0092421C /* HomeViewModel.swift in Sources */,
 				BB5BF93C2C44904A00C1F005 /* StotyData.swift in Sources */,
 				BB868C8D2C04904400BE31C1 /* HomeView.swift in Sources */,
@@ -230,6 +240,8 @@
 				BB868C932C04912F00BE31C1 /* ProfileView.swift in Sources */,
 				BB5BF93F2C44911400C1F005 /* StoryMock.swift in Sources */,
 				BB868C7E2C048DC400BE31C1 /* BackfrontPostsApp.swift in Sources */,
+				BBE9A3C82C5E73AB0092421C /* PostView.swift in Sources */,
+				BBE9A3CA2C5E754A0092421C /* PostData.swift in Sources */,
 				BB868C902C0490EF00BE31C1 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
