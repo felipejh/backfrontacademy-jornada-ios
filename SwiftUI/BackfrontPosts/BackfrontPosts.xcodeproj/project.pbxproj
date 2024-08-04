@@ -21,6 +21,7 @@
 		BBE9A3C82C5E73AB0092421C /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE9A3C72C5E73AB0092421C /* PostView.swift */; };
 		BBE9A3CA2C5E754A0092421C /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE9A3C92C5E754A0092421C /* PostData.swift */; };
 		BBE9A3CC2C5E765A0092421C /* PostMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE9A3CB2C5E765A0092421C /* PostMock.swift */; };
+		BBE9A3CF2C5FAFC40092421C /* CustomVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE9A3CE2C5FAFC40092421C /* CustomVideoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		BBE9A3C72C5E73AB0092421C /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		BBE9A3C92C5E754A0092421C /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		BBE9A3CB2C5E765A0092421C /* PostMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMock.swift; sourceTree = "<group>"; };
+		BBE9A3CE2C5FAFC40092421C /* CustomVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		BB868C7C2C048DC400BE31C1 /* BackfrontPosts */ = {
 			isa = PBXGroup;
 			children = (
+				BBE9A3CD2C5FAF910092421C /* CustomVideoView */,
 				BB5BF93A2C44903400C1F005 /* Model */,
 				BBE9A3C42C5E735E0092421C /* PostView */,
 				BB5BF9372C448F9300C1F005 /* StoryView */,
@@ -159,6 +162,14 @@
 				BBE9A3C72C5E73AB0092421C /* PostView.swift */,
 			);
 			path = PostView;
+			sourceTree = "<group>";
+		};
+		BBE9A3CD2C5FAF910092421C /* CustomVideoView */ = {
+			isa = PBXGroup;
+			children = (
+				BBE9A3CE2C5FAFC40092421C /* CustomVideoView.swift */,
+			);
+			path = CustomVideoView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 				BB868C7E2C048DC400BE31C1 /* BackfrontPostsApp.swift in Sources */,
 				BBE9A3C82C5E73AB0092421C /* PostView.swift in Sources */,
 				BBE9A3CA2C5E754A0092421C /* PostData.swift in Sources */,
+				BBE9A3CF2C5FAFC40092421C /* CustomVideoView.swift in Sources */,
 				BB868C902C0490EF00BE31C1 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

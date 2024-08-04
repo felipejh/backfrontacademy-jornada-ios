@@ -10,7 +10,7 @@ import SwiftUI
 struct PostView: View {
     
     @State var post: PostData
-    @State var isLikeAnimation: Bool = true
+    @State var isLikeAnimation: Bool = false
     
     var body: some View {
         VStack {
