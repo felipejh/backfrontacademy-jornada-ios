@@ -14,7 +14,7 @@ struct CustomVideoView: View {
     @State var player = AVPlayer()
     @Binding var isMuted: Bool
     
-    init(url: String, isMuted: Binding<Bool>) {
+    init(url: String?, isMuted: Binding<Bool>) {
         _isMuted = isMuted
         videoURL = Bundle.main.url(forResource: url, withExtension: "mp4")
         
@@ -39,6 +39,7 @@ struct CustomVideoView: View {
                         .background(Color.black.opacity(0.7))
                         .clipShape(Circle())
                 })
+                .padding(8)
             }
         } else {
             VStack{

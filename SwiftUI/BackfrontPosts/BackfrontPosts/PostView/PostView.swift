@@ -10,6 +10,7 @@ import SwiftUI
 struct PostView: View {
     
     @State var post: PostData
+    @Binding var isMuted: Bool
     @State var isLikeAnimation: Bool = false
     
     var body: some View {
@@ -51,10 +52,14 @@ struct PostView: View {
                             tappedLike()
                         })
                 } else {
-                    // video
+                    CustomVideoView(url: post.videoURL, isMuted: $isMuted)
+                        .frame(minHeight: 350)
+                        .onTapGesture(count: 2, perform: {
+                            tappedLike()
+                        })
                 }
                 
-                Image("white-heart")
+                Image("heart-white-no-border")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 170, height: 170)
@@ -64,8 +69,50 @@ struct PostView: View {
             }
                         
             HStack {
+                Button {
+                    post.isLiked.toggle()
+                } label: {
+                    Image(post.isLiked ? "heart-selected" : "heart")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 30, height: 30)
+                        .opacity(0.7)
+                }
                 
+                Button {
+                    print("tapped comment button")
+                } label: {
+                    Image("comment")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 30, height: 30)
+                }
+                
+                Button {
+                    print("tapped share button")
+                } label: {
+                    Image("share")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 30, height: 30)
+                        .opacity(0.7)
+                }
+                
+                Spacer()
+                
+                Button {
+                    post.isSaved.toggle()
+                } label: {
+                    Image(post.isSaved ? "save-selected" : "save")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 30, height: 30)
+                        .opacity(0.7)
+                }
+
             }
+            .padding(.top, 8)
+            .padding(.horizontal, 15)
             
         }
     }
@@ -87,5 +134,5 @@ struct PostView: View {
 }
 
 #Preview {
-    PostView(post: PostMock[1])
+    PostView(post: PostMock[4], isMuted: .constant(true))
 }
