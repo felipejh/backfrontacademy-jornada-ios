@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PostView: View {
     
-    @State var post: PostData
+    @Binding var post: PostData
     @Binding var isMuted: Bool
     @State var isLikeAnimation: Bool = false
     
@@ -114,7 +114,25 @@ struct PostView: View {
             .padding(.top, 8)
             .padding(.horizontal, 15)
             
+            if !post.caption.isEmpty {
+                HStack {
+                    Text(post.userName)
+                        .font(Font.system(size: 14, weight: .bold))
+                    + Text(" ")
+                    + Text(post.caption)
+                        .font(Font.system(size: 14, weight: .regular))
+                    
+                    Spacer()
+                }
+                .multilineTextAlignment(.leading)
+                .padding(.horizontal, 15)
+                .padding(.top, 2)
+                .padding(.bottom, 10)
+            }
+            
         }
+        .background(Color.white)
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
     
     func tappedLike() {
@@ -134,5 +152,6 @@ struct PostView: View {
 }
 
 #Preview {
-    PostView(post: PostMock[4], isMuted: .constant(true))
+    @State var post = PostMock[4]
+    return PostView(post: $post, isMuted: .constant(true))
 }

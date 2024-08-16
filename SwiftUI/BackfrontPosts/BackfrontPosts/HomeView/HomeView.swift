@@ -27,9 +27,13 @@ struct HomeView: View {
                     .frame(width: 90)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                     
-                    Spacer()
-                    
-                    Text("Hello, World!")
+                    ScrollView(.vertical) {
+                        LazyVStack {
+                            ForEach($viewModel.postList) { post in
+                                PostView(post: post, isMuted: $viewModel.isMuted)
+                            }
+                        }
+                    }
                 }
                 .padding()
                 

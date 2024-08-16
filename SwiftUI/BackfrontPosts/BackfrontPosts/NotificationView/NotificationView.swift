@@ -8,8 +8,22 @@
 import SwiftUI
 
 struct NotificationView: View {
+    
+    @State private var viewModel: NotificationViewModel = NotificationViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ScrollView(.vertical, showsIndicators: false) {
+                LazyVStack {
+                    ForEach(viewModel.activityList) { activity in
+                        ActivityView(activity: activity)
+                    }
+                }
+            }
+            .navigationTitle("Notificações")
+            .navigationBarTitleDisplayMode(.large)
+            
+        }
     }
 }
 

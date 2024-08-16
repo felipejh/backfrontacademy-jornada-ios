@@ -9,7 +9,32 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack {
+                    Text("Agora vai")
+                }
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar(content: {
+                ToolbarItem(placement: .topBarLeading) {
+                    Text("backfronacademy")
+                        .font(Font.system(size: 22, weight: .bold))
+                }
+                
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        print("tappedMenuButton")
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                            .resizable()
+                            .foregroundStyle(.black)
+                            .frame(width: 32, height: 22)
+                    }
+                    
+                }
+            })
+        }
     }
 }
 

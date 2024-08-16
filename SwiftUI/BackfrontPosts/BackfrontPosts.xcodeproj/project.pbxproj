@@ -10,6 +10,12 @@
 		BB5BF9392C448FA600C1F005 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5BF9382C448FA600C1F005 /* StoryView.swift */; };
 		BB5BF93C2C44904A00C1F005 /* StotyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5BF93B2C44904A00C1F005 /* StotyData.swift */; };
 		BB5BF93F2C44911400C1F005 /* StoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5BF93E2C44911400C1F005 /* StoryMock.swift */; };
+		BB8532F42C6AD1780014A822 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8532F32C6AD1780014A822 /* NotificationViewModel.swift */; };
+		BB8532F62C6AD5840014A822 /* HighlightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8532F52C6AD5840014A822 /* HighlightData.swift */; };
+		BB8532F82C6AD5B50014A822 /* ProfilePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8532F72C6AD5B50014A822 /* ProfilePost.swift */; };
+		BB8532FA2C6AD6100014A822 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8532F92C6AD6100014A822 /* ProfileViewModel.swift */; };
+		BB8532FC2C6AD6F80014A822 /* HighlighMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8532FB2C6AD6F80014A822 /* HighlighMock.swift */; };
+		BB8532FE2C6AD71C0014A822 /* ProfilePostMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8532FD2C6AD71C0014A822 /* ProfilePostMock.swift */; };
 		BB868C7E2C048DC400BE31C1 /* BackfrontPostsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB868C7D2C048DC400BE31C1 /* BackfrontPostsApp.swift */; };
 		BB868C802C048DC400BE31C1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB868C7F2C048DC400BE31C1 /* MainView.swift */; };
 		BB868C822C048DC800BE31C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB868C812C048DC800BE31C1 /* Assets.xcassets */; };
@@ -19,6 +25,10 @@
 		BB868C932C04912F00BE31C1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB868C922C04912F00BE31C1 /* ProfileView.swift */; };
 		BB95DC202C67C0B5008119E5 /* bfVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BB95DC1E2C67C0B5008119E5 /* bfVideo.mp4 */; };
 		BB95DC212C67C0B5008119E5 /* cars.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BB95DC1F2C67C0B5008119E5 /* cars.mp4 */; };
+		BB95DC232C68D5F1008119E5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB95DC222C68D5F1008119E5 /* Activity.swift */; };
+		BB95DC252C68D602008119E5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB95DC242C68D602008119E5 /* User.swift */; };
+		BB95DC282C68DCA1008119E5 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB95DC272C68DCA1008119E5 /* ActivityView.swift */; };
+		BB95DC2A2C68DD13008119E5 /* ActivityMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB95DC292C68DD13008119E5 /* ActivityMock.swift */; };
 		BBE9A3C32C5E6EEE0092421C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE9A3C22C5E6EEE0092421C /* HomeViewModel.swift */; };
 		BBE9A3C82C5E73AB0092421C /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE9A3C72C5E73AB0092421C /* PostView.swift */; };
 		BBE9A3CA2C5E754A0092421C /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE9A3C92C5E754A0092421C /* PostData.swift */; };
@@ -30,6 +40,12 @@
 		BB5BF9382C448FA600C1F005 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		BB5BF93B2C44904A00C1F005 /* StotyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StotyData.swift; sourceTree = "<group>"; };
 		BB5BF93E2C44911400C1F005 /* StoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryMock.swift; sourceTree = "<group>"; };
+		BB8532F32C6AD1780014A822 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		BB8532F52C6AD5840014A822 /* HighlightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightData.swift; sourceTree = "<group>"; };
+		BB8532F72C6AD5B50014A822 /* ProfilePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePost.swift; sourceTree = "<group>"; };
+		BB8532F92C6AD6100014A822 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		BB8532FB2C6AD6F80014A822 /* HighlighMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlighMock.swift; sourceTree = "<group>"; };
+		BB8532FD2C6AD71C0014A822 /* ProfilePostMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostMock.swift; sourceTree = "<group>"; };
 		BB868C7A2C048DC400BE31C1 /* BackfrontPosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackfrontPosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB868C7D2C048DC400BE31C1 /* BackfrontPostsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackfrontPostsApp.swift; sourceTree = "<group>"; };
 		BB868C7F2C048DC400BE31C1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -40,6 +56,10 @@
 		BB868C922C04912F00BE31C1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BB95DC1E2C67C0B5008119E5 /* bfVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bfVideo.mp4; sourceTree = "<group>"; };
 		BB95DC1F2C67C0B5008119E5 /* cars.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cars.mp4; sourceTree = "<group>"; };
+		BB95DC222C68D5F1008119E5 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		BB95DC242C68D602008119E5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BB95DC272C68DCA1008119E5 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		BB95DC292C68DD13008119E5 /* ActivityMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityMock.swift; sourceTree = "<group>"; };
 		BBE9A3C22C5E6EEE0092421C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BBE9A3C72C5E73AB0092421C /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		BBE9A3C92C5E754A0092421C /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
@@ -72,6 +92,10 @@
 				BB5BF93D2C4490F800C1F005 /* Mock */,
 				BB5BF93B2C44904A00C1F005 /* StotyData.swift */,
 				BBE9A3C92C5E754A0092421C /* PostData.swift */,
+				BB95DC222C68D5F1008119E5 /* Activity.swift */,
+				BB95DC242C68D602008119E5 /* User.swift */,
+				BB8532F52C6AD5840014A822 /* HighlightData.swift */,
+				BB8532F72C6AD5B50014A822 /* ProfilePost.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -81,6 +105,9 @@
 			children = (
 				BB5BF93E2C44911400C1F005 /* StoryMock.swift */,
 				BBE9A3CB2C5E765A0092421C /* PostMock.swift */,
+				BB95DC292C68DD13008119E5 /* ActivityMock.swift */,
+				BB8532FB2C6AD6F80014A822 /* HighlighMock.swift */,
+				BB8532FD2C6AD71C0014A822 /* ProfilePostMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -104,6 +131,7 @@
 		BB868C7C2C048DC400BE31C1 /* BackfrontPosts */ = {
 			isa = PBXGroup;
 			children = (
+				BB95DC262C68DC82008119E5 /* ActivityView */,
 				BB95DC1D2C67C073008119E5 /* DemoVideo */,
 				BBE9A3CD2C5FAF910092421C /* CustomVideoView */,
 				BB5BF93A2C44903400C1F005 /* Model */,
@@ -141,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				BB868C8F2C0490EF00BE31C1 /* NotificationView.swift */,
+				BB8532F32C6AD1780014A822 /* NotificationViewModel.swift */,
 			);
 			path = NotificationView;
 			sourceTree = "<group>";
@@ -149,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				BB868C922C04912F00BE31C1 /* ProfileView.swift */,
+				BB8532F92C6AD6100014A822 /* ProfileViewModel.swift */,
 			);
 			path = ProfileView;
 			sourceTree = "<group>";
@@ -160,6 +190,14 @@
 				BB95DC1F2C67C0B5008119E5 /* cars.mp4 */,
 			);
 			path = DemoVideo;
+			sourceTree = "<group>";
+		};
+		BB95DC262C68DC82008119E5 /* ActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				BB95DC272C68DCA1008119E5 /* ActivityView.swift */,
+			);
+			path = ActivityView;
 			sourceTree = "<group>";
 		};
 		BBE9A3C12C5E6ED80092421C /* ViewModel */ = {
@@ -260,13 +298,23 @@
 			files = (
 				BB5BF9392C448FA600C1F005 /* StoryView.swift in Sources */,
 				BBE9A3CC2C5E765A0092421C /* PostMock.swift in Sources */,
+				BB95DC232C68D5F1008119E5 /* Activity.swift in Sources */,
 				BBE9A3C32C5E6EEE0092421C /* HomeViewModel.swift in Sources */,
 				BB5BF93C2C44904A00C1F005 /* StotyData.swift in Sources */,
+				BB8532FC2C6AD6F80014A822 /* HighlighMock.swift in Sources */,
+				BB8532F42C6AD1780014A822 /* NotificationViewModel.swift in Sources */,
+				BB8532FA2C6AD6100014A822 /* ProfileViewModel.swift in Sources */,
+				BB95DC282C68DCA1008119E5 /* ActivityView.swift in Sources */,
 				BB868C8D2C04904400BE31C1 /* HomeView.swift in Sources */,
+				BB8532F62C6AD5840014A822 /* HighlightData.swift in Sources */,
+				BB8532FE2C6AD71C0014A822 /* ProfilePostMock.swift in Sources */,
 				BB868C802C048DC400BE31C1 /* MainView.swift in Sources */,
+				BB95DC2A2C68DD13008119E5 /* ActivityMock.swift in Sources */,
 				BB868C932C04912F00BE31C1 /* ProfileView.swift in Sources */,
+				BB95DC252C68D602008119E5 /* User.swift in Sources */,
 				BB5BF93F2C44911400C1F005 /* StoryMock.swift in Sources */,
 				BB868C7E2C048DC400BE31C1 /* BackfrontPostsApp.swift in Sources */,
+				BB8532F82C6AD5B50014A822 /* ProfilePost.swift in Sources */,
 				BBE9A3C82C5E73AB0092421C /* PostView.swift in Sources */,
 				BBE9A3CA2C5E754A0092421C /* PostData.swift in Sources */,
 				BBE9A3CF2C5FAFC40092421C /* CustomVideoView.swift in Sources */,
