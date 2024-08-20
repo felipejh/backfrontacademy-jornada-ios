@@ -7,7 +7,7 @@
 
 import Foundation
 
-var HiglightMock: [HighlightData] = [
+var HighlightMock: [HighlightData] = [
     HighlightData(name: "Recordações", cover: "h-1"),
     HighlightData(name: "Depoimentos", cover: "h-1"),
     HighlightData(name: "Quem somos", cover: "h-1"),

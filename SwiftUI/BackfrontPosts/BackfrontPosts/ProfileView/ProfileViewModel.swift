@@ -21,14 +21,14 @@ class ProfileViewModel {
     ]
     
     var profilePostData: [ProfilePost] = [
-        ProfilePost(image: "thumb1", type: .multiple),
-        ProfilePost(image: "thumb2", type: .video),
-        ProfilePost(image: "thumb3", type: .multiple),
-        ProfilePost(image: "thumb4", type: .video),
-        ProfilePost(image: "thumb5", type: .multiple),
-        ProfilePost(image: "thumb6", type: .video),
-        ProfilePost(image: "thumb7", type: .multiple),
-        ProfilePost(image: "thumb8", type: .video),
-        ProfilePost(image: "thumb9", type: .multiple),
+        ProfilePost(image: "user4", type: .multiple),
+        ProfilePost(image: "user2", type: .video),
+        ProfilePost(image: "user2", type: .multiple),
+        ProfilePost(image: "user1", type: .video),
+        ProfilePost(image: "user2", type: .multiple),
+        ProfilePost(image: "user1", type: .video),
+        ProfilePost(image: "user2", type: .multiple),
+        ProfilePost(image: "user2", type: .video),
+        ProfilePost(image: "user4", type: .multiple),
     ]
 }
